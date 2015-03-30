@@ -14,6 +14,8 @@ Currently FontAwesomeKit supports **4** different icon fonts.
 
 Not sure how best to package these types of components so example project will suffice.
 
+An icon has a name, size, and a color (optional)
+
 ```
 <Icon
   name='ion|beer'
@@ -41,7 +43,20 @@ Not sure how best to package these types of components so example project will s
 />
 ```
 
+Stacked icons are also supported by nesting
 
-An icon has a name, size, and a color which is optional
+```
+<Icon
+  name='fontawesome|square'
+  size={80}
+  color='#55acee'
+  style={styles.twitterOutline}>
+  <Icon
+    name='fontawesome|twitter'
+    size={50}
+    color='#ffffff'
+    style={styles.twitterIcon}/>
+</Icon>
+```
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/6721696/stacked-demo.png)
