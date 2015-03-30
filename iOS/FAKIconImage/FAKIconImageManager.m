@@ -14,6 +14,10 @@
     return [[FAKIconImage alloc] init];
 }
 
+RCT_REMAP_VIEW_PROPERTY(size, iconSize, NSNumber);
+RCT_EXPORT_VIEW_PROPERTY(name, NSString);
+RCT_EXPORT_VIEW_PROPERTY(color, NSString);
+
 RCT_CUSTOM_VIEW_PROPERTY(icon, NSDictionary, FAKIconImage)
 {
     if(json) {

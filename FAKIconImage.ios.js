@@ -29,51 +29,13 @@ var invariant = require('invariant');
 var merge = require('merge');
 var warning = require('warning');
 
-/**
- * A react component for displaying icon fonts as images.
- * Currently supports FontAwesome, Ion Icons, Foundation, and Zocial
- *
- * Example usage:
- *
- * ```
- * renderImages: function() {
- *   return (
- *     <View>
- *       <Image
- *         style={styles.icon}
- *         source={require('image!myIcon')}
- *       />
- *       <Image
- *         style={styles.logo}
- *         source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}}
- *       />
- *     </View>
- *   );
- * },
- * ```
- */
-//
-//render: function () {
-//    //<FAKIconImage iconName={'fontawesome:circle-o-notch'} source={this.getImageSource()} style={styles.iconImage} />
-//    return (
-//        <View style={styles.mainSection}>
-//            <FAKIconImage
-//                icon={this.getIcon()}
-//                style={styles.iconImage}
-//            />
-//        </View>
-//    );
-//},
-//getIcon : function
-
 var FAKIconImage = React.createClass({
     propTypes: {
-        icon: PropTypes.shape({
-            name: PropTypes.string,
-            size: PropTypes.number,
-            color: PropTypes.string
-        }),
-    /**
+        name: PropTypes.string,
+        size: PropTypes.number,
+        color: PropTypes.string,
+
+        /**
          * accessible - Whether this element should be revealed as an accessible
          * element.
          */
@@ -104,45 +66,46 @@ var FAKIconImage = React.createClass({
 
     render: function() {
 
-        //console.log(NativeModules);
         var style = flattenStyle([styles.base, this.props.style]);
         invariant(style, "style must be initialized");
 
-        invariant(this.props.icon, "style must be initialized");
+        var name = this.props.name;
+        invariant(name, "name must be initialized");
 
-        //TODO: Validate width
-        //TODO: Validate height
+        var size = this.props.size;
+        invariant(size, "size must be initialized");
 
-        //console.log("props");
-        //console.log(this.props);
-
+        var color = this.props.color;
 
 
         var nativeProps = merge(this.props, {
-            style
+            style,
+            icon : {
+                name: name,
+                size: size,
+                color: color
+            }
         });
-        //nativeProps.icon.color = style.color;
-        //
         return <FAKIconImageView {...nativeProps} />;
     }
 });
 
 var styles = StyleSheet.create({
     base: {
-        overflow: 'hidden',
-    },
+        overflow: 'hidden'
+    }
 });
 
 var CommonImageViewAttributes = merge(ReactIOSViewAttributes.UIView, {
     accessible: true,
     accessibilityLabel: true,
     icon: true,
-    testID: PropTypes.string,
+    testID: PropTypes.string
 });
 
 var FAKIconImageView = createReactIOSNativeComponentClass({
     validAttributes: CommonImageViewAttributes,
-    uiViewClassName: 'FAKIconImage',
+    uiViewClassName: 'FAKIconImage'
 });
 
 module.exports = FAKIconImage;

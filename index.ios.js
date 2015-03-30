@@ -13,56 +13,40 @@ var {
   ScrollView
 } = React;
 
-var IconImage = require('./FAKIconImage.ios');
-
+var Icon = require('./FAKIconImage.ios');
+var iconSize = 100;
 var ReactNativeIcons = React.createClass({
   render: function() {
     return (
       <ScrollView contentContainerStyle={styles.container}>
-          <IconImage
-              icon={icons.beer}
-              style={styles.icon}
+          <Icon
+              name='ion|beer'
+              size={150}
+              color='#887700'
+              style={styles.beer}
           />
-          <IconImage
-              icon={icons.idea}
-              style={styles.icon}
+          <Icon
+              name='zocial|github'
+              size={70}
+              color='black'
+              style={styles.github}
           />
-          <IconImage
-              icon={icons.github}
-              style={styles.icon}
+          <Icon
+              name='fontawesome|facebook-square'
+              size={70}
+              color='#3b5998'
+              style={styles.facebook}
           />
-          <IconImage
-              icon={icons.facebook}
-              style={styles.icon}
+          <Icon
+              name='foundation|lightbulb'
+              size={30}
+              color='#777777'
+              style={styles.lightbulb}
           />
       </ScrollView>
     );
   }
 });
-
-var iconSize = 100;
-var icons = {
-    idea: {
-        name: 'foundation|lightbulb',
-        size: iconSize,
-        color: 'green'
-    },
-    facebook: {
-        name: 'fontawesome|facebook-square',
-        size: iconSize,
-        color: '#3b5998'
-    },
-    beer: {
-        name: 'ion|beer',
-        size: iconSize,
-        color: 'orange'
-    },
-    github: {
-        name: 'zocial|github',
-        size: iconSize,
-        color: 'black'
-    }
-};
 
 var styles = StyleSheet.create({
   container: {
@@ -70,11 +54,29 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-    icon : {
+  beer : {
+    flex: 1,
+    flexDirection: 'column',
+    width: 150,
+    height: 150
+  },
+    github : {
         flex: 1,
         flexDirection: 'column',
-        width: iconSize,
-        height: iconSize
+        width: 70,
+        height: 70
+    },
+    facebook : {
+        flex: 1,
+        flexDirection: 'column',
+        width: 70,
+        height: 70
+    },
+    lightbulb : {
+        flex: 1,
+        flexDirection: 'column',
+        width: 30,
+        height: 30
     }
 });
 

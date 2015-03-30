@@ -13,36 +13,31 @@ Currently FontAwesomeKit supports **4** different icon fonts.
 Not sure how best to package these types of components so example project will suffice.
 
 ```
-<IconImage
-    icon={icons.beer}
-    style={styles.icon}
+<Icon
+  name='ion|beer'
+  size={150}
+  color='#887700'
+  style={styles.beer}
+/>
+<Icon
+  name='zocial|github'
+  size={70}
+  color='black'
+  style={styles.github}
+/>
+<Icon
+  name='fontawesome|facebook-square'
+  size={70}
+  color='#3b5998'
+  style={styles.facebook}
+/>
+<Icon
+  name='foundation|lightbulb'
+  size={30}
+  color='#777777'
+  style={styles.lightbulb}
 />
 ```
 
 
 An icon has a name, size, and a color which is optional
-
-```
-var icons = {
-    idea: {
-        name: 'foundation|lightbulb',
-        size: iconSize,
-        color: 'green'
-    },
-    facebook: {
-        name: 'fontawesome|facebook-square',
-        size: iconSize,
-        color: '#3b5998'
-    },
-    beer: {
-        name: 'ion|beer',
-        size: iconSize,
-        color: 'orange'
-    },
-    github: {
-        name: 'zocial|github',
-        size: iconSize,
-        color: 'black'
-    }
-};
-```
