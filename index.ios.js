@@ -7,6 +7,7 @@
 var React = require('react-native');
 var {
   AppRegistry,
+  Animation,
   StyleSheet,
   Text,
   View,
@@ -16,46 +17,75 @@ var {
 var Icon = require('./FAKIconImage.ios');
 
 var ReactNativeIcons = React.createClass({
-
   render: function () {
     return (
       <ScrollView contentContainerStyle={styles.container}>
-        <Icon
-          name='ion|beer'
-          size={100}
-          color='#887700'
-          style={styles.beer}
-        />
-        <Icon
-          name='zocial|github'
-          size={70}
-          color='black'
-          style={styles.github}
-        />
-        <Icon
-          name='fontawesome|facebook-square'
-          size={70}
-          color='#3b5998'
-          style={styles.facebook}
-        />
-        <Icon
-          name='foundation|lightbulb'
-          size={30}
-          style={styles.lightbulb}/>
+        <View style={styles.topContainer}>
+          <Icon
+            name='ion|beer'
+            size={70}
+            color='#887700'
+            style={styles.beer}
+          />
+          <Icon
+            name='zocial|github'
+            size={70}
+            color='black'
+            style={styles.github}
+          />
+          <Icon
+            name='fontawesome|facebook-square'
+            size={70}
+            color='#3b5998'
+            style={styles.facebook}
+          />
+          <Icon
+            name='foundation|lightbulb'
+            size={70}
+            style={styles.lightbulb}/>
+        </View>
+
         <Text style={styles.header}>
             {'Stacked Icons!'}
         </Text>
         <Icon
           name='fontawesome|square'
-          size={80}
+          size={70}
           color='#55acee'
           style={styles.twitterOutline}>
           <Icon
             name='fontawesome|twitter'
-            size={50}
+            size={40}
             color='#ffffff'
             style={styles.twitterIcon}/>
         </Icon>
+
+        <Text style={styles.header}>
+            {'Create social sign in buttons'}
+        </Text>
+        <View
+          style={styles.signInWithTwitterButton}>
+          <Icon
+            name='fontawesome|twitter'
+            size={28}
+            color='#ffffff'
+            style={styles.signInWithTwitterIcon}/>
+          <Text style={styles.signInText}>
+            {'Sign in with Twitter'}
+          </Text>
+        </View>
+
+        <View
+          style={styles.signInWithFacebookButton}>
+          <Icon
+            name='fontawesome|facebook'
+            size={28}
+            color='#ffffff'
+            style={styles.signInWithFacebookIcon}/>
+          <Text style={styles.signInText}>
+            {'Sign in with Facebook'}
+          </Text>
+        </View>
 
       </ScrollView>
     );
@@ -66,49 +96,86 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+  },
+  topContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
   },
   header: {
     flexDirection: 'column',
     backgroundColor: 'transparent',
-    fontSize: 24
+    fontSize: 18,
+    marginTop: 20,
+    marginBottom: 10,
+    color:'#555555',
   },
   beer: {
-    flex: 1,
-    flexDirection: 'column',
-    width: 100,
-    height: 100
-  },
-
-  github: {
-    flex: 1,
-    flexDirection: 'column',
     width: 70,
-    height: 70
+    height: 70,
+    margin: 10
+  },
+  github: {
+    width: 70,
+    height: 70,
+    margin: 10
   },
   facebook: {
-    flex: 1,
-    flexDirection: 'column',
     width: 70,
-    height: 70
+    height: 70,
+    margin: 10
+  },
+  lightbulb: {
+    width: 70,
+    height: 70,
+    margin: 10
   },
   twitterOutline: {
-    flex: 1,
     flexDirection: 'column',
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
     alignItems: 'center'
   },
   twitterIcon: {
     flex: 1,
-    width: 50,
-    height: 50
+    width: 40,
+    height: 40
   },
-  lightbulb: {
-    flex: 1,
-    flexDirection: 'column',
-    width: 30,
-    height: 30
+  signInWithTwitterButton: {
+    backgroundColor: '#55acee',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: 210,
+    padding: 5,
+    borderRadius: 3
+  },
+  signInWithTwitterIcon: {
+    width: 28,
+    height: 28,
+    marginLeft: 5
+  },
+  signInText: {
+    color: 'white',
+    marginLeft: 5,
+    fontFamily: 'HelveticaNeue-Medium',
+    fontSize: 15
+  },
+  signInWithFacebookButton: {
+    backgroundColor: '#3b5998',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: 210,
+    padding: 5,
+    borderRadius: 3,
+    marginTop: 10
+  },
+  signInWithFacebookIcon: {
+    width: 28,
+    height: 28,
+    marginLeft: 5
   }
 });
 
