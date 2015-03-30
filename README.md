@@ -41,3 +41,5 @@ Not sure how best to package these types of components so example project will s
 
 
 An icon has a name, size, and a color which is optional
+
+![Screenshot](https://dl.dropboxusercontent.com/u/6721696/stacked-demo.png)
