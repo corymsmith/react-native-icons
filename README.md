@@ -16,6 +16,9 @@ Not sure how best to package these types of components so example project will s
 
 An icon has a name, size, and a color (optional)
 
+## Coming Soon
+* Ability to use icon fonts in TabBarIOS
+
 ```
 <Icon
   name='ion|beer'
