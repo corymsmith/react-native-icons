@@ -31,6 +31,11 @@
 		2F115DC61AC8F34C001E22DC /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F115DBD1AC8F34C001E22DC /* foundation-icons.ttf */; };
 		2F115DC71AC8F34C001E22DC /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F115DBE1AC8F34C001E22DC /* ionicons.ttf */; };
 		2F115DC81AC8F34C001E22DC /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F115DBF1AC8F34C001E22DC /* zocial-regular-webfont.ttf */; };
+		2F115DD71ACAFC95001E22DC /* SMXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F115DD41ACAFC95001E22DC /* SMXTabBarItem.m */; };
+		2F115DD81ACAFC95001E22DC /* SMXTabBarItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F115DD61ACAFC95001E22DC /* SMXTabBarItemManager.m */; };
+		2F115E331ACC5911001E22DC /* SMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F115E301ACC5911001E22DC /* SMXTabBar.m */; };
+		2F115E341ACC5911001E22DC /* SMXTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F115E321ACC5911001E22DC /* SMXTabBarManager.m */; };
+		2FF2738C1ACCB8750040FBAE /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2738B1ACCB8750040FBAE /* main.jsbundle */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +141,15 @@
 		2F115DBD1AC8F34C001E22DC /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
 		2F115DBE1AC8F34C001E22DC /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		2F115DBF1AC8F34C001E22DC /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		2F115DD31ACAFC95001E22DC /* SMXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItem.h; sourceTree = "<group>"; };
+		2F115DD41ACAFC95001E22DC /* SMXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItem.m; sourceTree = "<group>"; };
+		2F115DD51ACAFC95001E22DC /* SMXTabBarItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItemManager.h; sourceTree = "<group>"; };
+		2F115DD61ACAFC95001E22DC /* SMXTabBarItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItemManager.m; sourceTree = "<group>"; };
+		2F115E2F1ACC5911001E22DC /* SMXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBar.h; sourceTree = "<group>"; };
+		2F115E301ACC5911001E22DC /* SMXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBar.m; sourceTree = "<group>"; };
+		2F115E311ACC5911001E22DC /* SMXTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarManager.h; sourceTree = "<group>"; };
+		2F115E321ACC5911001E22DC /* SMXTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarManager.m; sourceTree = "<group>"; };
+		2FF2738B1ACCB8750040FBAE /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +233,7 @@
 		13B07FAE1A68108700A75B9A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2F115DD21ACAFC95001E22DC /* SMXTabBar */,
 				2F115D9E1AC8F024001E22DC /* FAKIconImage */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -273,6 +288,22 @@
 			path = iOS/Libraries/FontAwesomeKit;
 			sourceTree = "<group>";
 		};
+		2F115DD21ACAFC95001E22DC /* SMXTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2F115E2F1ACC5911001E22DC /* SMXTabBar.h */,
+				2F115E301ACC5911001E22DC /* SMXTabBar.m */,
+				2F115E311ACC5911001E22DC /* SMXTabBarManager.h */,
+				2F115E321ACC5911001E22DC /* SMXTabBarManager.m */,
+				2F115DD31ACAFC95001E22DC /* SMXTabBarItem.h */,
+				2F115DD41ACAFC95001E22DC /* SMXTabBarItem.m */,
+				2F115DD51ACAFC95001E22DC /* SMXTabBarItemManager.h */,
+				2F115DD61ACAFC95001E22DC /* SMXTabBarItemManager.m */,
+			);
+			name = SMXTabBar;
+			path = iOS/IconTabBarItem;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +333,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2FF2738B1ACCB8750040FBAE /* main.jsbundle */,
 				13B07FAE1A68108700A75B9A /* iOS */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -477,6 +509,7 @@
 				2F115DC71AC8F34C001E22DC /* ionicons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				2FF2738C1ACCB8750040FBAE /* main.jsbundle in Resources */,
 				2F115DC51AC8F34C001E22DC /* FontAwesome.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,13 +523,17 @@
 			files = (
 				2F115DC21AC8F34C001E22DC /* FAKIcon.m in Sources */,
 				2F115DA51AC8F024001E22DC /* FAKIconImage.m in Sources */,
+				2F115E341ACC5911001E22DC /* SMXTabBarManager.m in Sources */,
 				2F115DA61AC8F024001E22DC /* FAKIconImageManager.m in Sources */,
+				2F115DD71ACAFC95001E22DC /* SMXTabBarItem.m in Sources */,
 				2F115DC11AC8F34C001E22DC /* FAKFoundationIcons.m in Sources */,
 				2F115DC31AC8F34C001E22DC /* FAKIonIcons.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				2F115DC01AC8F34C001E22DC /* FAKFontAwesome.m in Sources */,
+				2F115E331ACC5911001E22DC /* SMXTabBar.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				2F115DC41AC8F34C001E22DC /* FAKZocial.m in Sources */,
+				2F115DD81ACAFC95001E22DC /* SMXTabBarItemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
