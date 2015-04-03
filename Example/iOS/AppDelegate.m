@@ -31,13 +31,13 @@
   // OPTION 2
   // Load from pre-bundled file on disk. To re-generate the static bundle, run
   //
-  // $ curl http://localhost:8081/index.ios.bundle -o main.jsbundle
+  // $ curl 'http://localhost:8081/index.ios.bundle?dev=false&minify=true' -o iOS/main.jsbundle
   //
   // and uncomment the next following line
   // jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"ReactNativeIcons"
+                                                      moduleName:@"example"
                                                    launchOptions:launchOptions];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

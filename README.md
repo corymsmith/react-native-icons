@@ -11,13 +11,20 @@ Currently FontAwesomeKit supports **4** different icon fonts.
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
 
-
-Not sure how best to package these types of components so example project will suffice.
-
 An icon has a name, size, and a color (optional)
 
-## Coming Soon
-* Ability to use icon fonts in TabBarIOS
+## Getting started
+
+1. `npm install react-native-icons@latest --save`
+2. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
+3. Go to `node_modules` ➜ `react-native-icons` and add `ReactNativeIcons.xcodeproj`
+4. Add `libReactNativeIcons.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+5. Drag ReactNativeIconsResources.bundle into the Copy Bundle Resources build phase of your project (from 'Products' under ReactNativeIcons.xcodeproj)
+6. Click `ReactNativeIcons.xcodeproj` in the project navigator and go the `Build Settings` tab. Look for `User Search Paths` and make sure it contains both `$(SRCROOT)/../../react-native/React`, make sure to set it as `recursive`.
+7. Make sure you set 'Always Search User Paths' to 'Yes'
+8. Run your project (`Cmd+R`)
+
+## Example of icons
 
 ```
 <Icon
@@ -46,7 +53,7 @@ An icon has a name, size, and a color (optional)
 />
 ```
 
-Stacked icons are also supported by nesting
+## Stacked icons
 
 ```
 <Icon
@@ -61,5 +68,87 @@ Stacked icons are also supported by nesting
     style={styles.twitterIcon}/>
 </Icon>
 ```
+
+## Custom tab bar
+
+```javascript
+
+var Example = React.createClass({
+  getInitialState: function() {
+    return {
+      selectedTab: 'home',
+      notifCount: 0,
+      presses: 0,
+    };
+  },
+  render: function () {
+    return (
+      <SMXTabBarIOS
+        selectedTab={this.state.selectedTab}
+        tintColor={'#c1d82f'}
+        barTintColor={'#000000'}
+        styles={styles.tabBar}>
+        <SMXTabBarItemIOS
+          name="home"
+          iconName={'ion|ios-home-outline'}
+          title={''}
+          iconSize={32}
+          accessibilityLabel="Home Tab"
+          selected={this.state.selectedTab === 'home'}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'home',
+            });
+          }}>
+          {this._renderContent()}
+        </SMXTabBarItemIOS>
+        <SMXTabBarItemIOS
+            name="articles"
+            iconName={'ion|ios-paper-outline'}
+            title={''}
+            iconSize={32}
+            accessibilityLabel="Articles Tab"
+            selected={this.state.selectedTab === 'articles'}
+            onPress={() => {
+            this.setState({
+              selectedTab: 'articles',
+            });
+          }}>
+          {this._renderContent()}
+        </SMXTabBarItemIOS>
+        <SMXTabBarItemIOS
+            name="messages"
+            iconName={'ion|chatboxes'}
+            title={''}
+            iconSize={32}
+            accessibilityLabel="Messages Tab"
+            selected={this.state.selectedTab === 'messages'}
+            onPress={() => {
+            this.setState({
+              selectedTab: 'messages',
+            });
+          }}>
+          {this._renderContent()}
+        </SMXTabBarItemIOS>
+        <SMXTabBarItemIOS
+            name="settings"
+            iconName={'ion|ios-gear'}
+            title={''}
+            iconSize={32}
+            accessibilityLabel="Settings Tab"
+            selected={this.state.selectedTab === 'settings'}
+            onPress={() => {
+            this.setState({
+              selectedTab: 'settings',
+            });
+          }}>
+          {this._renderContent()}
+        </SMXTabBarItemIOS>
+      </SMXTabBarIOS>
+    );
+  }
+});
+```
+
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/6721696/stacked-demo.png)

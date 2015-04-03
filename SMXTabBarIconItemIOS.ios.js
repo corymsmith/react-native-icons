@@ -57,7 +57,7 @@ render: function() {
     tabContents = <View />;
   }
 
-  var icon = {name : this.props.iconName, size: 28, color: '#ff000'};
+  var icon = {name : this.props.iconName, size: this.props.iconSize ? this.props.iconSize : 28};
 
   return (
     <SmixxTabBarItem

@@ -9,7 +9,9 @@
 #ifndef DISABLE_FONTAWESOME_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL:[[NSBundle mainBundle] URLForResource:@"FontAwesome" withExtension:@"otf"]];
+        NSURL *resourcesBundleUrl = [[NSBundle mainBundle] URLForResource:@"ReactNativeIconsResources" withExtension:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithURL:resourcesBundleUrl];
+        [self registerIconFontWithURL:[bundle URLForResource:@"FontAwesome" withExtension:@"otf"]];
     });
 #endif
     

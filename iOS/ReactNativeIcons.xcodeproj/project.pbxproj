@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F4DA32B1ACE25CC00CC8346 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */; };
+		2F4DA32C1ACE25CC00CC8346 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */; };
+		2F4DA32D1ACE25CC00CC8346 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */; };
+		2F4DA32E1ACE25CC00CC8346 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */; };
+		2F5A3EF71ACDC0AD00439386 /* FAKIconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */; };
+		2F5A3EF81ACDC0AD00439386 /* FAKIconImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */; };
+		2F5A3EF91ACDC0AD00439386 /* SMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */; };
+		2F5A3EFA1ACDC0AD00439386 /* SMXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE11ACDC0AD00439386 /* SMXTabBarItem.m */; };
+		2F5A3EFB1ACDC0AD00439386 /* SMXTabBarItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE31ACDC0AD00439386 /* SMXTabBarItemManager.m */; };
+		2F5A3EFC1ACDC0AD00439386 /* SMXTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE51ACDC0AD00439386 /* SMXTabBarManager.m */; };
+		2F5A3EFD1ACDC0AD00439386 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE91ACDC0AD00439386 /* FAKFontAwesome.m */; };
+		2F5A3EFE1ACDC0AD00439386 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EEB1ACDC0AD00439386 /* FAKFoundationIcons.m */; };
+		2F5A3EFF1ACDC0AD00439386 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EED1ACDC0AD00439386 /* FAKIcon.m */; };
+		2F5A3F001ACDC0AD00439386 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */; };
+		2F5A3F011ACDC0AD00439386 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F5A3EB61ACDBF8000439386 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F4DA3241ACE21C300CC8346 /* ReactNativeIconsResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeIconsResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4DA3271ACE21C300CC8346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5A3ED91ACDC0AD00439386 /* FAKIconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImage.h; sourceTree = "<group>"; };
+		2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImage.m; sourceTree = "<group>"; };
+		2F5A3EDB1ACDC0AD00439386 /* FAKIconImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImageManager.h; sourceTree = "<group>"; };
+		2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImageManager.m; sourceTree = "<group>"; };
+		2F5A3EDE1ACDC0AD00439386 /* SMXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBar.h; sourceTree = "<group>"; };
+		2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBar.m; sourceTree = "<group>"; };
+		2F5A3EE01ACDC0AD00439386 /* SMXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItem.h; sourceTree = "<group>"; };
+		2F5A3EE11ACDC0AD00439386 /* SMXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItem.m; sourceTree = "<group>"; };
+		2F5A3EE21ACDC0AD00439386 /* SMXTabBarItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItemManager.h; sourceTree = "<group>"; };
+		2F5A3EE31ACDC0AD00439386 /* SMXTabBarItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItemManager.m; sourceTree = "<group>"; };
+		2F5A3EE41ACDC0AD00439386 /* SMXTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarManager.h; sourceTree = "<group>"; };
+		2F5A3EE51ACDC0AD00439386 /* SMXTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarManager.m; sourceTree = "<group>"; };
+		2F5A3EE81ACDC0AD00439386 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
+		2F5A3EE91ACDC0AD00439386 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
+		2F5A3EEA1ACDC0AD00439386 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
+		2F5A3EEB1ACDC0AD00439386 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFoundationIcons.m; sourceTree = "<group>"; };
+		2F5A3EEC1ACDC0AD00439386 /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIcon.h; sourceTree = "<group>"; };
+		2F5A3EED1ACDC0AD00439386 /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIcon.m; sourceTree = "<group>"; };
+		2F5A3EEE1ACDC0AD00439386 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
+		2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
+		2F5A3EF01ACDC0AD00439386 /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKZocial.h; sourceTree = "<group>"; };
+		2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKZocial.m; sourceTree = "<group>"; };
+		2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		2F5A3EF31ACDC0AD00439386 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
+		2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F4DA3211ACE21C300CC8346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5A3EB51ACDBF8000439386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F4DA3251ACE21C300CC8346 /* ReactNativeIconsResources */ = {
+			isa = PBXGroup;
+			children = (
+				2F4DA3261ACE21C300CC8346 /* Supporting Files */,
+			);
+			path = ReactNativeIconsResources;
+			sourceTree = "<group>";
+		};
+		2F4DA3261ACE21C300CC8346 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F4DA3271ACE21C300CC8346 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F5A3EAF1ACDBF8000439386 = {
+			isa = PBXGroup;
+			children = (
+				2F5A3ED81ACDC0AD00439386 /* FAKIconImage */,
+				2F5A3EDD1ACDC0AD00439386 /* IconTabBarItem */,
+				2F5A3EE61ACDC0AD00439386 /* Libraries */,
+				2F4DA3251ACE21C300CC8346 /* ReactNativeIconsResources */,
+				2F5A3EB91ACDBF8000439386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F5A3EB91ACDBF8000439386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */,
+				2F4DA3241ACE21C300CC8346 /* ReactNativeIconsResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F5A3ED81ACDC0AD00439386 /* FAKIconImage */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A3ED91ACDC0AD00439386 /* FAKIconImage.h */,
+				2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */,
+				2F5A3EDB1ACDC0AD00439386 /* FAKIconImageManager.h */,
+				2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */,
+			);
+			path = FAKIconImage;
+			sourceTree = "<group>";
+		};
+		2F5A3EDD1ACDC0AD00439386 /* IconTabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A3EDE1ACDC0AD00439386 /* SMXTabBar.h */,
+				2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */,
+				2F5A3EE01ACDC0AD00439386 /* SMXTabBarItem.h */,
+				2F5A3EE11ACDC0AD00439386 /* SMXTabBarItem.m */,
+				2F5A3EE21ACDC0AD00439386 /* SMXTabBarItemManager.h */,
+				2F5A3EE31ACDC0AD00439386 /* SMXTabBarItemManager.m */,
+				2F5A3EE41ACDC0AD00439386 /* SMXTabBarManager.h */,
+				2F5A3EE51ACDC0AD00439386 /* SMXTabBarManager.m */,
+			);
+			path = IconTabBarItem;
+			sourceTree = "<group>";
+		};
+		2F5A3EE61ACDC0AD00439386 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A3EE71ACDC0AD00439386 /* FontAwesomeKit */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		2F5A3EE71ACDC0AD00439386 /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A3EE81ACDC0AD00439386 /* FAKFontAwesome.h */,
+				2F5A3EE91ACDC0AD00439386 /* FAKFontAwesome.m */,
+				2F5A3EEA1ACDC0AD00439386 /* FAKFoundationIcons.h */,
+				2F5A3EEB1ACDC0AD00439386 /* FAKFoundationIcons.m */,
+				2F5A3EEC1ACDC0AD00439386 /* FAKIcon.h */,
+				2F5A3EED1ACDC0AD00439386 /* FAKIcon.m */,
+				2F5A3EEE1ACDC0AD00439386 /* FAKIonIcons.h */,
+				2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */,
+				2F5A3EF01ACDC0AD00439386 /* FAKZocial.h */,
+				2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */,
+				2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */,
+				2F5A3EF31ACDC0AD00439386 /* FontAwesomeKit.h */,
+				2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */,
+				2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */,
+				2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */,
+			);
+			path = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F4DA3231ACE21C300CC8346 /* ReactNativeIconsResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4DA32A1ACE21C300CC8346 /* Build configuration list for PBXNativeTarget "ReactNativeIconsResources" */;
+			buildPhases = (
+				2F4DA3201ACE21C300CC8346 /* Sources */,
+				2F4DA3211ACE21C300CC8346 /* Frameworks */,
+				2F4DA3221ACE21C300CC8346 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactNativeIconsResources;
+			productName = ReactNativeIconsResources;
+			productReference = 2F4DA3241ACE21C300CC8346 /* ReactNativeIconsResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2F5A3EB71ACDBF8000439386 /* ReactNativeIcons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5A3ECC1ACDBF8000439386 /* Build configuration list for PBXNativeTarget "ReactNativeIcons" */;
+			buildPhases = (
+				2F5A3EB41ACDBF8000439386 /* Sources */,
+				2F5A3EB51ACDBF8000439386 /* Frameworks */,
+				2F5A3EB61ACDBF8000439386 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactNativeIcons;
+			productName = ReactNativeIcons;
+			productReference = 2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F5A3EB01ACDBF8000439386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Smixx Inc.";
+				TargetAttributes = {
+					2F4DA3231ACE21C300CC8346 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2F5A3EB71ACDBF8000439386 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 2F5A3EB31ACDBF8000439386 /* Build configuration list for PBXProject "ReactNativeIcons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F5A3EAF1ACDBF8000439386;
+			productRefGroup = 2F5A3EB91ACDBF8000439386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F5A3EB71ACDBF8000439386 /* ReactNativeIcons */,
+				2F4DA3231ACE21C300CC8346 /* ReactNativeIconsResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F4DA3221ACE21C300CC8346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4DA32B1ACE25CC00CC8346 /* FontAwesome.otf in Resources */,
+				2F4DA32C1ACE25CC00CC8346 /* foundation-icons.ttf in Resources */,
+				2F4DA32D1ACE25CC00CC8346 /* ionicons.ttf in Resources */,
+				2F4DA32E1ACE25CC00CC8346 /* zocial-regular-webfont.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F4DA3201ACE21C300CC8346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5A3EB41ACDBF8000439386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5A3F001ACDC0AD00439386 /* FAKIonIcons.m in Sources */,
+				2F5A3EFC1ACDC0AD00439386 /* SMXTabBarManager.m in Sources */,
+				2F5A3EF71ACDC0AD00439386 /* FAKIconImage.m in Sources */,
+				2F5A3EFB1ACDC0AD00439386 /* SMXTabBarItemManager.m in Sources */,
+				2F5A3EFA1ACDC0AD00439386 /* SMXTabBarItem.m in Sources */,
+				2F5A3F011ACDC0AD00439386 /* FAKZocial.m in Sources */,
+				2F5A3EFE1ACDC0AD00439386 /* FAKFoundationIcons.m in Sources */,
+				2F5A3EF81ACDC0AD00439386 /* FAKIconImageManager.m in Sources */,
+				2F5A3EF91ACDC0AD00439386 /* SMXTabBar.m in Sources */,
+				2F5A3EFD1ACDC0AD00439386 /* FAKFontAwesome.m in Sources */,
+				2F5A3EFF1ACDC0AD00439386 /* FAKIcon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F4DA3281ACE21C300CC8346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactNativeIconsResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2F4DA3291ACE21C300CC8346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = ReactNativeIconsResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2F5A3ECA1ACDBF8000439386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F5A3ECB1ACDBF8000439386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F5A3ECD1ACDBF8000439386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2F5A3ECE1ACDBF8000439386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F4DA32A1ACE21C300CC8346 /* Build configuration list for PBXNativeTarget "ReactNativeIconsResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4DA3281ACE21C300CC8346 /* Debug */,
+				2F4DA3291ACE21C300CC8346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F5A3EB31ACDBF8000439386 /* Build configuration list for PBXProject "ReactNativeIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5A3ECA1ACDBF8000439386 /* Debug */,
+				2F5A3ECB1ACDBF8000439386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5A3ECC1ACDBF8000439386 /* Build configuration list for PBXNativeTarget "ReactNativeIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5A3ECD1ACDBF8000439386 /* Debug */,
+				2F5A3ECE1ACDBF8000439386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F5A3EB01ACDBF8000439386 /* Project object */;
+}

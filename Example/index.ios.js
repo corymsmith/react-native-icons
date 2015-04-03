@@ -14,11 +14,10 @@ var {
   } = React;
 
 var Icon = require('FAKIconImage');
-var NativeModules = require('NativeModules');
 var SMXTabBarIOS = require('SMXTabBarIOS');
 var SMXTabBarItemIOS = SMXTabBarIOS.Item;
 
-var ReactNativeIcons = React.createClass({
+var Example = React.createClass({
   getInitialState: function() {
     return {
       selectedTab: 'home',
@@ -37,6 +36,7 @@ var ReactNativeIcons = React.createClass({
           name="home"
           iconName={'ion|ios-home-outline'}
           title={''}
+          iconSize={32}
           accessibilityLabel="Home Tab"
           selected={this.state.selectedTab === 'home'}
           onPress={() => {
@@ -50,7 +50,7 @@ var ReactNativeIcons = React.createClass({
             name="articles"
             iconName={'ion|ios-paper-outline'}
             title={''}
-            iconSize={28}
+            iconSize={32}
             accessibilityLabel="Articles Tab"
             selected={this.state.selectedTab === 'articles'}
             onPress={() => {
@@ -64,7 +64,7 @@ var ReactNativeIcons = React.createClass({
             name="messages"
             iconName={'ion|chatboxes'}
             title={''}
-            iconSize={28}
+            iconSize={32}
             accessibilityLabel="Messages Tab"
             selected={this.state.selectedTab === 'messages'}
             onPress={() => {
@@ -78,7 +78,7 @@ var ReactNativeIcons = React.createClass({
             name="settings"
             iconName={'ion|ios-gear'}
             title={''}
-            iconSize={28}
+            iconSize={32}
             accessibilityLabel="Settings Tab"
             selected={this.state.selectedTab === 'settings'}
             onPress={() => {
@@ -259,4 +259,4 @@ var styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('ReactNativeIcons', () => ReactNativeIcons);
+AppRegistry.registerComponent('example', () => Example);

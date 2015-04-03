@@ -14,10 +14,38 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ReactNativeIcons.app"
+               BlueprintIdentifier = "2F5A3EB71ACDBF8000439386"
+               BuildableName = "libReactNativeIcons.a"
                BlueprintName = "ReactNativeIcons"
-               ReferencedContainer = "container:ReactNativeIcons.xcodeproj">
+               ReferencedContainer = "container:node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F4DA3231ACE21C300CC8346"
+               BuildableName = "ReactNativeIconsResources.bundle"
+               BlueprintName = "ReactNativeIconsResources"
+               ReferencedContainer = "container:node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "example.app"
+               BlueprintName = "example"
+               ReferencedContainer = "container:example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactNativeIcons.app"
-            BlueprintName = "ReactNativeIcons"
-            ReferencedContainer = "container:ReactNativeIcons.xcodeproj">
+            BuildableName = "example.app"
+            BlueprintName = "example"
+            ReferencedContainer = "container:example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactNativeIcons.app"
-            BlueprintName = "ReactNativeIcons"
-            ReferencedContainer = "container:ReactNativeIcons.xcodeproj">
+            BuildableName = "example.app"
+            BlueprintName = "example"
+            ReferencedContainer = "container:example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,9 +100,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactNativeIcons.app"
-            BlueprintName = "ReactNativeIcons"
-            ReferencedContainer = "container:ReactNativeIcons.xcodeproj">
+            BuildableName = "example.app"
+            BlueprintName = "example"
+            ReferencedContainer = "container:example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
