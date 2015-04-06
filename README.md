@@ -19,7 +19,7 @@ An icon has a name, size, and a color (optional)
 2. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
 3. Go to `node_modules` ➜ `react-native-icons` and add `ReactNativeIcons.xcodeproj`
 4. Add `libReactNativeIcons.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-5. Drag ReactNativeIconsResources.bundle into the Copy Bundle Resources build phase of your project (from 'Products' under ReactNativeIcons.xcodeproj)
+5. Drag ReactNativeIconsResources.bundle into the Copy Bundle Resources build phase of your project (from 'Products' under ReactNativeIcons.xcodeproj) and also drag the .bundle into the Copy Bundle Resources build phase of the ReactNativeIcons project as well.
 6. Click `ReactNativeIcons.xcodeproj` in the project navigator and go the `Build Settings` tab. Look for `User Search Paths` and make sure it contains both `$(SRCROOT)/../../react-native/React`, make sure to set it as `recursive`.
 7. Make sure you set 'Always Search User Paths' to 'Yes'
 8. Run your project (`Cmd+R`)
