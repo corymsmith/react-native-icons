@@ -7,10 +7,7 @@
 #ifndef DISABLE_IONICONS_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURL *resourcesBundleUrl = [[NSBundle mainBundle] URLForResource:@"ReactNativeIconsResources" withExtension:@"bundle"];
-        NSBundle *bundle = [NSBundle bundleWithURL:resourcesBundleUrl];
-
-        [self registerIconFontWithURL: [bundle URLForResource:@"ionicons" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"ionicons" withExtension:@"ttf"]];
     });
 #endif
     

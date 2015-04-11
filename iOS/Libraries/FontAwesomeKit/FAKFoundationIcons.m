@@ -9,9 +9,7 @@
 #ifndef DISABLE_FOUNDATIONICONS_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURL *resourcesBundleUrl = [[NSBundle mainBundle] URLForResource:@"ReactNativeIconsResources" withExtension:@"bundle"];
-        NSBundle *bundle = [NSBundle bundleWithURL:resourcesBundleUrl];
-        [self registerIconFontWithURL: [bundle URLForResource:@"foundation-icons" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"foundation-icons" withExtension:@"ttf"]];
     });
 #endif
     

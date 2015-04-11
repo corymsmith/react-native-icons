@@ -6,6 +6,8 @@
 
 @synthesize bridge = _bridge;
 
+RCT_EXPORT_MODULE()
+
 - (UIView *)view
 {
   return [[SMXTabBar alloc] initWithEventDispatcher:_bridge.eventDispatcher];

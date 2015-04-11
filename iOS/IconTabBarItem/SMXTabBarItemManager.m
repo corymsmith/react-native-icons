@@ -7,6 +7,8 @@
 
 @implementation SMXTabBarItemManager
 
+RCT_EXPORT_MODULE()
+
 - (UIView *)view
 {
     return [[SMXTabBarItem alloc] init];

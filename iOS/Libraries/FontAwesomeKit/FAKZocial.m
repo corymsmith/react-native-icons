@@ -11,7 +11,7 @@
     dispatch_once(&onceToken, ^{
         NSURL *resourcesBundleUrl = [[NSBundle mainBundle] URLForResource:@"ReactNativeIconsResources" withExtension:@"bundle"];
         NSBundle *bundle = [NSBundle bundleWithURL:resourcesBundleUrl];
-        [self registerIconFontWithURL: [bundle URLForResource:@"zocial-regular-webfont" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"zocial-regular-webfont" withExtension:@"ttf"]];
     });
 #endif
     

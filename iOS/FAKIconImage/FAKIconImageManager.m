@@ -9,6 +9,8 @@
 
 @implementation FAKIconImageManager
 
+RCT_EXPORT_MODULE()
+
 - (UIView *)view
 {
     return [[FAKIconImage alloc] init];
