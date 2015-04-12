@@ -22,7 +22,7 @@ RCT_EXPORT_VIEW_PROPERTY(color, NSString);
 
 RCT_CUSTOM_VIEW_PROPERTY(icon, NSDictionary, FAKIconImage)
 {
-    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.mycompany.myqueue", 0);
+    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.smixxtape.reactnativeicons", 0);
     dispatch_async(backgroundQueue, ^{
         if(json) {
             NSDictionary *iconDict = json ? [RCTConvert NSDictionary:json] : [NSDictionary dictionary];

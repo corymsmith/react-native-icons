@@ -15,13 +15,9 @@ RCT_EXPORT_MODULE()
 }
 
 RCT_EXPORT_VIEW_PROPERTY(selected, BOOL);
-//RCT_EXPORT_VIEW_PROPERTY(icon, NSDictionary);
-//RCT_REMAP_VIEW_PROPERTY(selectedIcon, barItem.selectedImage, UIImage);
 RCT_CUSTOM_VIEW_PROPERTY(icon, NSDictionary, SMXTabBarItem)
 {
-    
-    //you can use any string instead "com.mycompany.myqueue"
-    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.mycompany.myqueue", 0);
+    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.smixxtape.reactnativeicons", 0);
     dispatch_async(backgroundQueue, ^{
         NSDictionary *iconDict = json ? [RCTConvert NSDictionary:json] : [NSDictionary dictionary];
         NSString *iconString = iconDict[@"name"];

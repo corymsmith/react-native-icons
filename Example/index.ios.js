@@ -15,6 +15,7 @@ var {
 
 var Icon = require('FAKIconImage');
 var SMXTabBarIOS = require('SMXTabBarIOS');
+var BrandColors = require('SMXBrandColors');
 var SMXTabBarItemIOS = SMXTabBarIOS.Item;
 
 var Example = React.createClass({
@@ -110,7 +111,7 @@ var Example = React.createClass({
           <Icon
             name='fontawesome|facebook-square'
             size={40}
-            color='#3b5998'
+            color={BrandColors.Facebook}
             style={styles.facebook}
           />
           <Icon
@@ -125,7 +126,7 @@ var Example = React.createClass({
         <Icon
           name='fontawesome|square'
           size={70}
-          color='#55acee'
+          color={BrandColors.Twitter}
           style={styles.twitterOutline}>
           <Icon
             name='fontawesome|twitter'
@@ -223,7 +224,7 @@ var styles = StyleSheet.create({
     height: 40
   },
   signInWithTwitterButton: {
-    backgroundColor: '#55acee',
+    backgroundColor: BrandColors.Twitter,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
@@ -243,7 +244,7 @@ var styles = StyleSheet.create({
     fontSize: 15
   },
   signInWithFacebookButton: {
-    backgroundColor: '#3b5998',
+    backgroundColor: BrandColors.Facebook,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
