@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F4DA32B1ACE25CC00CC8346 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */; };
-		2F4DA32C1ACE25CC00CC8346 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */; };
-		2F4DA32D1ACE25CC00CC8346 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */; };
-		2F4DA32E1ACE25CC00CC8346 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */; };
 		2F5A3EF71ACDC0AD00439386 /* FAKIconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */; };
 		2F5A3EF81ACDC0AD00439386 /* FAKIconImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */; };
 		2F5A3EF91ACDC0AD00439386 /* SMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */; };
@@ -37,8 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F4DA3241ACE21C300CC8346 /* ReactNativeIconsResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeIconsResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F4DA3271ACE21C300CC8346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5A3ED91ACDC0AD00439386 /* FAKIconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImage.h; sourceTree = "<group>"; };
 		2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImage.m; sourceTree = "<group>"; };
@@ -70,13 +64,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F4DA3211ACE21C300CC8346 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F5A3EB51ACDBF8000439386 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,29 +74,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F4DA3251ACE21C300CC8346 /* ReactNativeIconsResources */ = {
-			isa = PBXGroup;
-			children = (
-				2F4DA3261ACE21C300CC8346 /* Supporting Files */,
-			);
-			path = ReactNativeIconsResources;
-			sourceTree = "<group>";
-		};
-		2F4DA3261ACE21C300CC8346 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F4DA3271ACE21C300CC8346 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		2F5A3EAF1ACDBF8000439386 = {
 			isa = PBXGroup;
 			children = (
 				2F5A3ED81ACDC0AD00439386 /* FAKIconImage */,
 				2F5A3EDD1ACDC0AD00439386 /* IconTabBarItem */,
 				2F5A3EE61ACDC0AD00439386 /* Libraries */,
-				2F4DA3251ACE21C300CC8346 /* ReactNativeIconsResources */,
 				2F5A3EB91ACDBF8000439386 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */,
-				2F4DA3241ACE21C300CC8346 /* ReactNativeIconsResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,8 +139,8 @@
 				2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */,
 				2F5A3EF01ACDC0AD00439386 /* FAKZocial.h */,
 				2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */,
-				2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */,
 				2F5A3EF31ACDC0AD00439386 /* FontAwesomeKit.h */,
+				2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */,
 				2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */,
 				2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */,
 				2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */,
@@ -182,23 +151,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F4DA3231ACE21C300CC8346 /* ReactNativeIconsResources */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F4DA32A1ACE21C300CC8346 /* Build configuration list for PBXNativeTarget "ReactNativeIconsResources" */;
-			buildPhases = (
-				2F4DA3201ACE21C300CC8346 /* Sources */,
-				2F4DA3211ACE21C300CC8346 /* Frameworks */,
-				2F4DA3221ACE21C300CC8346 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ReactNativeIconsResources;
-			productName = ReactNativeIconsResources;
-			productReference = 2F4DA3241ACE21C300CC8346 /* ReactNativeIconsResources.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		2F5A3EB71ACDBF8000439386 /* ReactNativeIcons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F5A3ECC1ACDBF8000439386 /* Build configuration list for PBXNativeTarget "ReactNativeIcons" */;
@@ -225,9 +177,6 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Smixx Inc.";
 				TargetAttributes = {
-					2F4DA3231ACE21C300CC8346 = {
-						CreatedOnToolsVersion = 6.2;
-					};
 					2F5A3EB71ACDBF8000439386 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -246,33 +195,11 @@
 			projectRoot = "";
 			targets = (
 				2F5A3EB71ACDBF8000439386 /* ReactNativeIcons */,
-				2F4DA3231ACE21C300CC8346 /* ReactNativeIconsResources */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		2F4DA3221ACE21C300CC8346 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F4DA32B1ACE25CC00CC8346 /* FontAwesome.otf in Resources */,
-				2F4DA32C1ACE25CC00CC8346 /* foundation-icons.ttf in Resources */,
-				2F4DA32D1ACE25CC00CC8346 /* ionicons.ttf in Resources */,
-				2F4DA32E1ACE25CC00CC8346 /* zocial-regular-webfont.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2F4DA3201ACE21C300CC8346 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F5A3EB41ACDBF8000439386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,39 +221,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2F4DA3281ACE21C300CC8346 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ReactNativeIconsResources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		2F4DA3291ACE21C300CC8346 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				INFOPLIST_FILE = ReactNativeIconsResources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		2F5A3ECA1ACDBF8000439386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,14 +316,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F4DA32A1ACE21C300CC8346 /* Build configuration list for PBXNativeTarget "ReactNativeIconsResources" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F4DA3281ACE21C300CC8346 /* Debug */,
-				2F4DA3291ACE21C300CC8346 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		2F5A3EB31ACDBF8000439386 /* Build configuration list for PBXProject "ReactNativeIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
