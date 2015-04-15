@@ -22,6 +22,7 @@ var insetsDiffer = require('insetsDiffer');
 var invariant = require('invariant');
 var merge = require('merge');
 var warning = require('warning');
+var deepDiffer = require('deepDiffer');
 
 var FAKIconImage = React.createClass({
     propTypes: {
@@ -93,7 +94,7 @@ var styles = StyleSheet.create({
 var CommonImageViewAttributes = merge(ReactIOSViewAttributes.UIView, {
     accessible: true,
     accessibilityLabel: true,
-    icon: true,
+    icon: {diff: deepDiffer},
     testID: PropTypes.string
 });
 
