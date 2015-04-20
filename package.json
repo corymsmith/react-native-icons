@@ -1,13 +1,13 @@
 {
   "name": "react-native-icons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Use 1000's of icon fonts in your React Native app including the tab bar.",
   "main": "FAKIconImage.ios.js",
   "react-native-module": {
     "podfile": "react-native-icons.podspec"
   },
   "dependencies": {
-    "react-native": "^0.3.11"
+    "react-native": "^0.4.0"
   },
   "author": "Cory Smith <cory.m.smith@gmail.com>",
   "keywords": [

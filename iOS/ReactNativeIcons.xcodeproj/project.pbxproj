@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F5A3EF71ACDC0AD00439386 /* FAKIconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */; };
-		2F5A3EF81ACDC0AD00439386 /* FAKIconImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */; };
-		2F5A3EF91ACDC0AD00439386 /* SMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */; };
-		2F5A3EFA1ACDC0AD00439386 /* SMXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE11ACDC0AD00439386 /* SMXTabBarItem.m */; };
-		2F5A3EFB1ACDC0AD00439386 /* SMXTabBarItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE31ACDC0AD00439386 /* SMXTabBarItemManager.m */; };
-		2F5A3EFC1ACDC0AD00439386 /* SMXTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE51ACDC0AD00439386 /* SMXTabBarManager.m */; };
-		2F5A3EFD1ACDC0AD00439386 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EE91ACDC0AD00439386 /* FAKFontAwesome.m */; };
-		2F5A3EFE1ACDC0AD00439386 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EEB1ACDC0AD00439386 /* FAKFoundationIcons.m */; };
-		2F5A3EFF1ACDC0AD00439386 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EED1ACDC0AD00439386 /* FAKIcon.m */; };
-		2F5A3F001ACDC0AD00439386 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */; };
-		2F5A3F011ACDC0AD00439386 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */; };
+		2F343AC71AE46C28002B3539 /* FAKIconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AAA1AE46C28002B3539 /* FAKIconImage.m */; };
+		2F343AC81AE46C28002B3539 /* FAKIconImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AAC1AE46C28002B3539 /* FAKIconImageManager.m */; };
+		2F343AC91AE46C28002B3539 /* SMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AAF1AE46C28002B3539 /* SMXTabBar.m */; };
+		2F343ACA1AE46C28002B3539 /* SMXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AB11AE46C28002B3539 /* SMXTabBarItem.m */; };
+		2F343ACB1AE46C28002B3539 /* SMXTabBarItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AB31AE46C28002B3539 /* SMXTabBarItemManager.m */; };
+		2F343ACC1AE46C28002B3539 /* SMXTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AB51AE46C28002B3539 /* SMXTabBarManager.m */; };
+		2F343ACD1AE46C28002B3539 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AB91AE46C28002B3539 /* FAKFontAwesome.m */; };
+		2F343ACE1AE46C28002B3539 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343ABB1AE46C28002B3539 /* FAKFoundationIcons.m */; };
+		2F343ACF1AE46C28002B3539 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343ABD1AE46C28002B3539 /* FAKIcon.m */; };
+		2F343AD01AE46C28002B3539 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343ABF1AE46C28002B3539 /* FAKIonIcons.m */; };
+		2F343AD11AE46C28002B3539 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F343AC11AE46C28002B3539 /* FAKZocial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,34 +33,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F343AA91AE46C28002B3539 /* FAKIconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImage.h; sourceTree = "<group>"; };
+		2F343AAA1AE46C28002B3539 /* FAKIconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImage.m; sourceTree = "<group>"; };
+		2F343AAB1AE46C28002B3539 /* FAKIconImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImageManager.h; sourceTree = "<group>"; };
+		2F343AAC1AE46C28002B3539 /* FAKIconImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImageManager.m; sourceTree = "<group>"; };
+		2F343AAE1AE46C28002B3539 /* SMXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBar.h; sourceTree = "<group>"; };
+		2F343AAF1AE46C28002B3539 /* SMXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBar.m; sourceTree = "<group>"; };
+		2F343AB01AE46C28002B3539 /* SMXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItem.h; sourceTree = "<group>"; };
+		2F343AB11AE46C28002B3539 /* SMXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItem.m; sourceTree = "<group>"; };
+		2F343AB21AE46C28002B3539 /* SMXTabBarItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItemManager.h; sourceTree = "<group>"; };
+		2F343AB31AE46C28002B3539 /* SMXTabBarItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItemManager.m; sourceTree = "<group>"; };
+		2F343AB41AE46C28002B3539 /* SMXTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarManager.h; sourceTree = "<group>"; };
+		2F343AB51AE46C28002B3539 /* SMXTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarManager.m; sourceTree = "<group>"; };
+		2F343AB81AE46C28002B3539 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
+		2F343AB91AE46C28002B3539 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
+		2F343ABA1AE46C28002B3539 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
+		2F343ABB1AE46C28002B3539 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFoundationIcons.m; sourceTree = "<group>"; };
+		2F343ABC1AE46C28002B3539 /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIcon.h; sourceTree = "<group>"; };
+		2F343ABD1AE46C28002B3539 /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIcon.m; sourceTree = "<group>"; };
+		2F343ABE1AE46C28002B3539 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
+		2F343ABF1AE46C28002B3539 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
+		2F343AC01AE46C28002B3539 /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKZocial.h; sourceTree = "<group>"; };
+		2F343AC11AE46C28002B3539 /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKZocial.m; sourceTree = "<group>"; };
+		2F343AC21AE46C28002B3539 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		2F343AC31AE46C28002B3539 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		2F343AC41AE46C28002B3539 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
+		2F343AC51AE46C28002B3539 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		2F343AC61AE46C28002B3539 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
 		2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F5A3ED91ACDC0AD00439386 /* FAKIconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImage.h; sourceTree = "<group>"; };
-		2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImage.m; sourceTree = "<group>"; };
-		2F5A3EDB1ACDC0AD00439386 /* FAKIconImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIconImageManager.h; sourceTree = "<group>"; };
-		2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIconImageManager.m; sourceTree = "<group>"; };
-		2F5A3EDE1ACDC0AD00439386 /* SMXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBar.h; sourceTree = "<group>"; };
-		2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBar.m; sourceTree = "<group>"; };
-		2F5A3EE01ACDC0AD00439386 /* SMXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItem.h; sourceTree = "<group>"; };
-		2F5A3EE11ACDC0AD00439386 /* SMXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItem.m; sourceTree = "<group>"; };
-		2F5A3EE21ACDC0AD00439386 /* SMXTabBarItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarItemManager.h; sourceTree = "<group>"; };
-		2F5A3EE31ACDC0AD00439386 /* SMXTabBarItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarItemManager.m; sourceTree = "<group>"; };
-		2F5A3EE41ACDC0AD00439386 /* SMXTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXTabBarManager.h; sourceTree = "<group>"; };
-		2F5A3EE51ACDC0AD00439386 /* SMXTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXTabBarManager.m; sourceTree = "<group>"; };
-		2F5A3EE81ACDC0AD00439386 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
-		2F5A3EE91ACDC0AD00439386 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
-		2F5A3EEA1ACDC0AD00439386 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
-		2F5A3EEB1ACDC0AD00439386 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFoundationIcons.m; sourceTree = "<group>"; };
-		2F5A3EEC1ACDC0AD00439386 /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIcon.h; sourceTree = "<group>"; };
-		2F5A3EED1ACDC0AD00439386 /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIcon.m; sourceTree = "<group>"; };
-		2F5A3EEE1ACDC0AD00439386 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
-		2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
-		2F5A3EF01ACDC0AD00439386 /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKZocial.h; sourceTree = "<group>"; };
-		2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKZocial.m; sourceTree = "<group>"; };
-		2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		2F5A3EF31ACDC0AD00439386 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
-		2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
-		2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
-		2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +74,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F343AA71AE46C28002B3539 /* ReactNativeIcons */ = {
+			isa = PBXGroup;
+			children = (
+				2F343AA81AE46C28002B3539 /* FAKIconImage */,
+				2F343AAD1AE46C28002B3539 /* IconTabBarItem */,
+				2F343AB61AE46C28002B3539 /* Libraries */,
+			);
+			path = ReactNativeIcons;
+			sourceTree = "<group>";
+		};
+		2F343AA81AE46C28002B3539 /* FAKIconImage */ = {
+			isa = PBXGroup;
+			children = (
+				2F343AA91AE46C28002B3539 /* FAKIconImage.h */,
+				2F343AAA1AE46C28002B3539 /* FAKIconImage.m */,
+				2F343AAB1AE46C28002B3539 /* FAKIconImageManager.h */,
+				2F343AAC1AE46C28002B3539 /* FAKIconImageManager.m */,
+			);
+			path = FAKIconImage;
+			sourceTree = "<group>";
+		};
+		2F343AAD1AE46C28002B3539 /* IconTabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				2F343AAE1AE46C28002B3539 /* SMXTabBar.h */,
+				2F343AAF1AE46C28002B3539 /* SMXTabBar.m */,
+				2F343AB01AE46C28002B3539 /* SMXTabBarItem.h */,
+				2F343AB11AE46C28002B3539 /* SMXTabBarItem.m */,
+				2F343AB21AE46C28002B3539 /* SMXTabBarItemManager.h */,
+				2F343AB31AE46C28002B3539 /* SMXTabBarItemManager.m */,
+				2F343AB41AE46C28002B3539 /* SMXTabBarManager.h */,
+				2F343AB51AE46C28002B3539 /* SMXTabBarManager.m */,
+			);
+			path = IconTabBarItem;
+			sourceTree = "<group>";
+		};
+		2F343AB61AE46C28002B3539 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2F343AB71AE46C28002B3539 /* FontAwesomeKit */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		2F343AB71AE46C28002B3539 /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				2F343AB81AE46C28002B3539 /* FAKFontAwesome.h */,
+				2F343AB91AE46C28002B3539 /* FAKFontAwesome.m */,
+				2F343ABA1AE46C28002B3539 /* FAKFoundationIcons.h */,
+				2F343ABB1AE46C28002B3539 /* FAKFoundationIcons.m */,
+				2F343ABC1AE46C28002B3539 /* FAKIcon.h */,
+				2F343ABD1AE46C28002B3539 /* FAKIcon.m */,
+				2F343ABE1AE46C28002B3539 /* FAKIonIcons.h */,
+				2F343ABF1AE46C28002B3539 /* FAKIonIcons.m */,
+				2F343AC01AE46C28002B3539 /* FAKZocial.h */,
+				2F343AC11AE46C28002B3539 /* FAKZocial.m */,
+				2F343AC21AE46C28002B3539 /* FontAwesome.otf */,
+				2F343AC31AE46C28002B3539 /* FontAwesomeKit.h */,
+				2F343AC41AE46C28002B3539 /* foundation-icons.ttf */,
+				2F343AC51AE46C28002B3539 /* ionicons.ttf */,
+				2F343AC61AE46C28002B3539 /* zocial-regular-webfont.ttf */,
+			);
+			path = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
 		2F5A3EAF1ACDBF8000439386 = {
 			isa = PBXGroup;
 			children = (
-				2F5A3ED81ACDC0AD00439386 /* FAKIconImage */,
-				2F5A3EDD1ACDC0AD00439386 /* IconTabBarItem */,
-				2F5A3EE61ACDC0AD00439386 /* Libraries */,
+				2F343AA71AE46C28002B3539 /* ReactNativeIcons */,
 				2F5A3EB91ACDBF8000439386 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,62 +154,6 @@
 				2F5A3EB81ACDBF8000439386 /* libReactNativeIcons.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2F5A3ED81ACDC0AD00439386 /* FAKIconImage */ = {
-			isa = PBXGroup;
-			children = (
-				2F5A3ED91ACDC0AD00439386 /* FAKIconImage.h */,
-				2F5A3EDA1ACDC0AD00439386 /* FAKIconImage.m */,
-				2F5A3EDB1ACDC0AD00439386 /* FAKIconImageManager.h */,
-				2F5A3EDC1ACDC0AD00439386 /* FAKIconImageManager.m */,
-			);
-			path = FAKIconImage;
-			sourceTree = "<group>";
-		};
-		2F5A3EDD1ACDC0AD00439386 /* IconTabBarItem */ = {
-			isa = PBXGroup;
-			children = (
-				2F5A3EDE1ACDC0AD00439386 /* SMXTabBar.h */,
-				2F5A3EDF1ACDC0AD00439386 /* SMXTabBar.m */,
-				2F5A3EE01ACDC0AD00439386 /* SMXTabBarItem.h */,
-				2F5A3EE11ACDC0AD00439386 /* SMXTabBarItem.m */,
-				2F5A3EE21ACDC0AD00439386 /* SMXTabBarItemManager.h */,
-				2F5A3EE31ACDC0AD00439386 /* SMXTabBarItemManager.m */,
-				2F5A3EE41ACDC0AD00439386 /* SMXTabBarManager.h */,
-				2F5A3EE51ACDC0AD00439386 /* SMXTabBarManager.m */,
-			);
-			path = IconTabBarItem;
-			sourceTree = "<group>";
-		};
-		2F5A3EE61ACDC0AD00439386 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				2F5A3EE71ACDC0AD00439386 /* FontAwesomeKit */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		2F5A3EE71ACDC0AD00439386 /* FontAwesomeKit */ = {
-			isa = PBXGroup;
-			children = (
-				2F5A3EE81ACDC0AD00439386 /* FAKFontAwesome.h */,
-				2F5A3EE91ACDC0AD00439386 /* FAKFontAwesome.m */,
-				2F5A3EEA1ACDC0AD00439386 /* FAKFoundationIcons.h */,
-				2F5A3EEB1ACDC0AD00439386 /* FAKFoundationIcons.m */,
-				2F5A3EEC1ACDC0AD00439386 /* FAKIcon.h */,
-				2F5A3EED1ACDC0AD00439386 /* FAKIcon.m */,
-				2F5A3EEE1ACDC0AD00439386 /* FAKIonIcons.h */,
-				2F5A3EEF1ACDC0AD00439386 /* FAKIonIcons.m */,
-				2F5A3EF01ACDC0AD00439386 /* FAKZocial.h */,
-				2F5A3EF11ACDC0AD00439386 /* FAKZocial.m */,
-				2F5A3EF31ACDC0AD00439386 /* FontAwesomeKit.h */,
-				2F5A3EF21ACDC0AD00439386 /* FontAwesome.otf */,
-				2F5A3EF41ACDC0AD00439386 /* foundation-icons.ttf */,
-				2F5A3EF51ACDC0AD00439386 /* ionicons.ttf */,
-				2F5A3EF61ACDC0AD00439386 /* zocial-regular-webfont.ttf */,
-			);
-			path = FontAwesomeKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,17 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F5A3F001ACDC0AD00439386 /* FAKIonIcons.m in Sources */,
-				2F5A3EFC1ACDC0AD00439386 /* SMXTabBarManager.m in Sources */,
-				2F5A3EF71ACDC0AD00439386 /* FAKIconImage.m in Sources */,
-				2F5A3EFB1ACDC0AD00439386 /* SMXTabBarItemManager.m in Sources */,
-				2F5A3EFA1ACDC0AD00439386 /* SMXTabBarItem.m in Sources */,
-				2F5A3F011ACDC0AD00439386 /* FAKZocial.m in Sources */,
-				2F5A3EFE1ACDC0AD00439386 /* FAKFoundationIcons.m in Sources */,
-				2F5A3EF81ACDC0AD00439386 /* FAKIconImageManager.m in Sources */,
-				2F5A3EF91ACDC0AD00439386 /* SMXTabBar.m in Sources */,
-				2F5A3EFD1ACDC0AD00439386 /* FAKFontAwesome.m in Sources */,
-				2F5A3EFF1ACDC0AD00439386 /* FAKIcon.m in Sources */,
+				2F343AD01AE46C28002B3539 /* FAKIonIcons.m in Sources */,
+				2F343ACC1AE46C28002B3539 /* SMXTabBarManager.m in Sources */,
+				2F343AC71AE46C28002B3539 /* FAKIconImage.m in Sources */,
+				2F343ACB1AE46C28002B3539 /* SMXTabBarItemManager.m in Sources */,
+				2F343ACA1AE46C28002B3539 /* SMXTabBarItem.m in Sources */,
+				2F343AD11AE46C28002B3539 /* FAKZocial.m in Sources */,
+				2F343ACE1AE46C28002B3539 /* FAKFoundationIcons.m in Sources */,
+				2F343AC81AE46C28002B3539 /* FAKIconImageManager.m in Sources */,
+				2F343AC91AE46C28002B3539 /* SMXTabBar.m in Sources */,
+				2F343ACD1AE46C28002B3539 /* FAKFontAwesome.m in Sources */,
+				2F343ACF1AE46C28002B3539 /* FAKIcon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,18 +306,32 @@
 		2F5A3ECD1ACDBF8000439386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		2F5A3ECE1ACDBF8000439386 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
