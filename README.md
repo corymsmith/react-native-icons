@@ -29,6 +29,9 @@ An icon has a name, size, and a color (optional)
 ## Example of icons
 
 ```
+var Icon = require('FAKIconImage');
+
+
 <Icon
   name='ion|beer'
   size={150}
@@ -74,6 +77,9 @@ An icon has a name, size, and a color (optional)
 ## Custom tab bar
 
 ```javascript
+
+var SMXTabBarIOS = require('SMXTabBarIOS');
+var SMXTabBarItemIOS = SMXTabBarIOS.Item;
 
 var Example = React.createClass({
   getInitialState: function() {
