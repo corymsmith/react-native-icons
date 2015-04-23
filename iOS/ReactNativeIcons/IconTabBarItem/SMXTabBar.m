@@ -141,4 +141,8 @@
 //    _tabController.tabBarItem.tintColor
 }
 
+- (void)setTranslucent:(BOOL)translucent {
+  _tabController.tabBar.translucent = translucent;
+}
+
 @end
