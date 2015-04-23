@@ -20,7 +20,8 @@ var SMXTabBarIOS = React.createClass({
   render: function () {
     var NativeProps = {
       tintColor : this.props.tintColor,
-      barTintColor : this.props.barTintColor
+      barTintColor : this.props.barTintColor,
+      translucent : this.props.translucent
     };
     return (
       <SMXIconTabBar style={[styles.tabGroup, this.props.style]} {...NativeProps}>
@@ -39,7 +40,8 @@ var styles = StyleSheet.create({
 var config = {
   validAttributes: merge(ReactIOSViewAttributes.UIView, {
     tintColor: true,
-    barTintColor: true
+    barTintColor: true,
+    translucent: true
   }),
   uiViewClassName: 'SMXTabBar',
 };
