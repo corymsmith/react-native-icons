@@ -25,6 +25,7 @@ An icon has a name, size, and a color (optional)
 ## Notes
 
 - You only need to include the icon font files you want to use 
+- Icon style must set a width and height, or the icon will not be visible
 
 ## Example of icons
 
