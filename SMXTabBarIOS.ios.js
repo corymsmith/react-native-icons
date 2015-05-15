@@ -6,12 +6,12 @@
 'use strict';
 
 var React = require('React');
-var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
+var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
 var SMXTabBarIconItemIOS = require('SMXTabBarItemIOS');
 var StyleSheet = require('StyleSheet');
 var merge = require('merge');
 
-var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
+var createReactNativeComponentClass = require('createReactNativeComponentClass');
 
 var SMXTabBarIOS = React.createClass({
   statics: {
@@ -38,13 +38,13 @@ var styles = StyleSheet.create({
 });
 
 var config = {
-  validAttributes: merge(ReactIOSViewAttributes.UIView, {
+  validAttributes: merge(ReactNativeViewAttributes.UIView, {
     tintColor: true,
     barTintColor: true,
     translucent: true
   }),
   uiViewClassName: 'SMXTabBar',
 };
-var SMXIconTabBar = createReactIOSNativeComponentClass(config);
+var SMXIconTabBar = createReactNativeComponentClass(config);
 
 module.exports = SMXTabBarIOS;

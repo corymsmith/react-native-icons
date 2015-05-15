@@ -7,13 +7,13 @@
 
 var Image = require('Image');
 var React = require('React');
-var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
+var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
 var Dimensions = require('Dimensions');
 var StaticContainer = require('StaticContainer.react');
 var StyleSheet = require('StyleSheet');
 var View = require('View');
 
-var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
+var createReactNativeComponentClass = require('createReactNativeComponentClass');
 var merge = require('merge');
 
 var SmixxTabBarItemIOS = React.createClass({
@@ -82,8 +82,8 @@ var styles = StyleSheet.create({
   }
 });
 
-var SmixxTabBarItem = createReactIOSNativeComponentClass({
-  validAttributes: merge(ReactIOSViewAttributes.UIView, {
+var SmixxTabBarItem = createReactNativeComponentClass({
+  validAttributes: merge(ReactNativeViewAttributes.UIView, {
     title: true,
     icon: true,
     selectedIcon: true,

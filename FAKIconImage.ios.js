@@ -12,11 +12,11 @@ var PropTypes = require('ReactPropTypes');
 var ImageResizeMode = require('ImageResizeMode');
 var ImageStylePropTypes = require('ImageStylePropTypes');
 var React = require('React');
-var ReactIOSViewAttributes = require('ReactNativeViewAttributes');
+var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
 var StyleSheet = require('StyleSheet');
 var StyleSheetPropType = require('StyleSheetPropType');
 
-var createReactIOSNativeComponentClass = require('createReactNativeComponentClass');
+var createReactNativeComponentClass = require('createReactNativeComponentClass');
 var flattenStyle = require('flattenStyle');
 var insetsDiffer = require('insetsDiffer');
 var invariant = require('invariant');
@@ -56,7 +56,7 @@ var FAKIconImage = React.createClass({
     // */
     viewConfig: {
         uiViewClassName: 'UIView',
-        validAttributes: ReactIOSViewAttributes.UIView
+        validAttributes: ReactNativeViewAttributes.UIView
     },
 
     render: function() {
@@ -91,14 +91,14 @@ var styles = StyleSheet.create({
     }
 });
 
-var CommonImageViewAttributes = merge(ReactIOSViewAttributes.UIView, {
+var CommonImageViewAttributes = merge(ReactNativeViewAttributes.UIView, {
     accessible: true,
     accessibilityLabel: true,
     icon: {diff: deepDiffer},
     testID: PropTypes.string
 });
 
-var FAKIconImageView = createReactIOSNativeComponentClass({
+var FAKIconImageView = createReactNativeComponentClass({
     validAttributes: CommonImageViewAttributes,
     uiViewClassName: 'FAKIconImage'
 });
