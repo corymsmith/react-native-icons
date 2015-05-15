@@ -12,11 +12,11 @@ var PropTypes = require('ReactPropTypes');
 var ImageResizeMode = require('ImageResizeMode');
 var ImageStylePropTypes = require('ImageStylePropTypes');
 var React = require('React');
-var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
+var ReactIOSViewAttributes = require('ReactNativeViewAttributes');
 var StyleSheet = require('StyleSheet');
 var StyleSheetPropType = require('StyleSheetPropType');
 
-var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
+var createReactIOSNativeComponentClass = require('createReactNativeComponentClass');
 var flattenStyle = require('flattenStyle');
 var insetsDiffer = require('insetsDiffer');
 var invariant = require('invariant');
