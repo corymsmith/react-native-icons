@@ -1,5 +1,7 @@
 # React Native Icons
 
+[![NPM](https://nodei.co/npm/react-native-icons.png?downloads=true&downloadRank=true)](https://nodei.co/npm/react-native-icons/)
+
 [![Join the chat at https://gitter.im/corymsmith/react-native-icons](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/corymsmith/react-native-icons?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A React Native wrapper on top of [https://github.com/PrideChung/FontAwesomeKit].
