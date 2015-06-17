@@ -26,6 +26,6 @@
     "podfile": "react-native-icons.podspec"
   },
   "peerDependencies": {
-    "react-native": "^0.5.0"
+    "react-native": ">=0.5.0 <1.0.0"
   }
 }
