@@ -1,6 +1,6 @@
 {
   "name": "react-native-icons",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Use 1000's of icon fonts in your React Native app including the tab bar.",
   "main": "FAKIconImage.ios.js",
   "author": "Cory Smith <cory.m.smith@gmail.com>",
