@@ -14,6 +14,11 @@ RCT_EXPORT_MODULE()
     return [[SMXTabBarItem alloc] init];
 }
 
+- (dispatch_queue_t)methodQueue
+{
+  return dispatch_get_main_queue();
+}
+
 RCT_EXPORT_VIEW_PROPERTY(selected, BOOL);
 RCT_CUSTOM_VIEW_PROPERTY(icon, NSDictionary, SMXTabBarItem)
 {

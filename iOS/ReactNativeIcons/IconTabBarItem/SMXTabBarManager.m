@@ -13,6 +13,11 @@ RCT_EXPORT_MODULE()
   return [[SMXTabBar alloc] initWithEventDispatcher:_bridge.eventDispatcher];
 }
 
+- (dispatch_queue_t)methodQueue
+{
+  return dispatch_get_main_queue();
+}
+
 RCT_EXPORT_VIEW_PROPERTY(barTintColor, UIColor);
 RCT_EXPORT_VIEW_PROPERTY(tintColor, UIColor);
 RCT_EXPORT_VIEW_PROPERTY(translucent, BOOL);

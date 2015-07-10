@@ -32,7 +32,7 @@ An icon has a name, size, and a color (optional)
 ## Example of icons
 
 ```
-var Icon = require('FAKIconImage');
+var { Icon, } = require('react-native-icons');
 
 
 <Icon
@@ -81,8 +81,8 @@ var Icon = require('FAKIconImage');
 
 ```javascript
 
-var SMXTabBarIOS = require('SMXTabBarIOS');
-var SMXTabBarItemIOS = SMXTabBarIOS.Item;
+var { TabBarIOS, } = require('react-native-icons');
+var TabBarItemIOS = TabBarIOS.Item;
 
 var Example = React.createClass({
   getInitialState: function() {
@@ -94,12 +94,12 @@ var Example = React.createClass({
   },
   render: function () {
     return (
-      <SMXTabBarIOS
+      <TabBarIOS
         selectedTab={this.state.selectedTab}
         tintColor={'#c1d82f'}
         barTintColor={'#000000'}
         styles={styles.tabBar}>
-        <SMXTabBarItemIOS
+        <TabBarItemIOS
           name="home"
           iconName={'ion|ios-home-outline'}
           title={''}
@@ -112,8 +112,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-        <SMXTabBarItemIOS
+        </TabBarItemIOS>
+        <TabBarItemIOS
             name="articles"
             iconName={'ion|ios-paper-outline'}
             title={''}
@@ -126,8 +126,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-        <SMXTabBarItemIOS
+        </TabBarItemIOS>
+        <TabBarItemIOS
             name="messages"
             iconName={'ion|chatboxes'}
             title={''}
@@ -140,8 +140,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-        <SMXTabBarItemIOS
+        </TabBarItemIOS>
+        <TabBarItemIOS
             name="settings"
             iconName={'ion|ios-gear'}
             title={''}
@@ -154,8 +154,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-      </SMXTabBarIOS>
+        </TabBarItemIOS>
+      </TabBarIOS>
     );
   }
 });

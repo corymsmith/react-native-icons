@@ -5,25 +5,36 @@
  */
 'use strict';
 
-var Image = require('Image');
-var React = require('React');
-var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
-var Dimensions = require('Dimensions');
-var StaticContainer = require('StaticContainer.react');
-var StyleSheet = require('StyleSheet');
-var View = require('View');
+var React = require('react-native');
+var { Image, StyleSheet, View, requireNativeComponent, PropTypes, } = React;
 
-var createReactNativeComponentClass = require('createReactNativeComponentClass');
-var merge = require('merge');
+// TODO: Replace this with a destructured require like above once 0.8.0
+// is released, and set minimum version
+var Dimensions = require('react-native/Libraries/Utilities/Dimensions');
+
+var onlyChild = React.Children.only;
+
+// Copy this right in here from react-contrib
+class StaticContainer extends React.Component {
+
+  shouldComponentUpdate(nextProps) {
+    return !!nextProps.shouldUpdate;
+  }
+
+  render() {
+    var child = this.props.children;
+    return (child === null || child === false) ? null : onlyChild(child);
+  }
+
+}
 
 var SmixxTabBarItemIOS = React.createClass({
   propTypes: {
-    //icon: Image.propTypes.source.isRequired,
-    onPress: React.PropTypes.func.isRequired,
-    selected: React.PropTypes.bool.isRequired,
-    badgeValue: React.PropTypes.string,
-    title: React.PropTypes.string,
-    style: View.propTypes.style,
+    onPress: PropTypes.func.isRequired,
+    selected: PropTypes.bool.isRequired,
+    badgeValue: PropTypes.string,
+    title: PropTypes.string,
+    icon: PropTypes.object,
   },
 
   getInitialState: function() {
@@ -49,10 +60,11 @@ render: function() {
   // if the tab has already been shown once, always continue to show it so we
   // preserve state between tab transitions
   if (this.state.hasBeenSelected) {
-    tabContents =
+    tabContents = (
       <StaticContainer shouldUpdate={this.props.selected}>
-          {this.props.children}
-      </StaticContainer>;
+        {this.props.children}
+      </StaticContainer>
+    );
   } else {
     tabContents = <View />;
   }
@@ -82,15 +94,5 @@ var styles = StyleSheet.create({
   }
 });
 
-var SmixxTabBarItem = createReactNativeComponentClass({
-  validAttributes: merge(ReactNativeViewAttributes.UIView, {
-    title: true,
-    icon: true,
-    selectedIcon: true,
-    selected: true,
-    badgeValue: true,
-  }),
-  uiViewClassName: 'SMXTabBarItem'
-});
-
+var SmixxTabBarItem = requireNativeComponent('SMXTabBarItem', SmixxTabBarItemIOS);
 module.exports = SmixxTabBarItemIOS;

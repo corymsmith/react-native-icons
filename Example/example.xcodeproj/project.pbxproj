@@ -22,6 +22,10 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		2F4DA3581ACE2DDC00CC8346 /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4DA3551ACE2DCD00CC8346 /* libReactNativeIcons.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		CE90A3461B50803400CB0E5D /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE90A3421B50803400CB0E5D /* FontAwesome.otf */; };
+		CE90A3471B50803400CB0E5D /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90A3431B50803400CB0E5D /* foundation-icons.ttf */; };
+		CE90A3481B50803400CB0E5D /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90A3441B50803400CB0E5D /* ionicons.ttf */; };
+		CE90A3491B50803400CB0E5D /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90A3451B50803400CB0E5D /* zocial-regular-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,10 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2F4DA34F1ACE2DCD00CC8346 /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		CE90A3421B50803400CB0E5D /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = ../iOS/ReactNativeIcons/Libraries/FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
+		CE90A3431B50803400CB0E5D /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "../iOS/ReactNativeIcons/Libraries/FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		CE90A3441B50803400CB0E5D /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = ../iOS/ReactNativeIcons/Libraries/FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		CE90A3451B50803400CB0E5D /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "../iOS/ReactNativeIcons/Libraries/FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,10 @@
 		13B07FAE1A68108700A75B9A /* example */ = {
 			isa = PBXGroup;
 			children = (
+				CE90A3421B50803400CB0E5D /* FontAwesome.otf */,
+				CE90A3431B50803400CB0E5D /* foundation-icons.ttf */,
+				CE90A3441B50803400CB0E5D /* ionicons.ttf */,
+				CE90A3451B50803400CB0E5D /* zocial-regular-webfont.ttf */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -410,9 +422,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE90A3481B50803400CB0E5D /* ionicons.ttf in Resources */,
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CE90A3491B50803400CB0E5D /* zocial-regular-webfont.ttf in Resources */,
+				CE90A3461B50803400CB0E5D /* FontAwesome.otf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CE90A3471B50803400CB0E5D /* foundation-icons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

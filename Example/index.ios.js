@@ -11,12 +11,16 @@ var {
   Text,
   View,
   ScrollView
-  } = React;
+} = React;
 
-var Icon = require('FAKIconImage');
-var SMXTabBarIOS = require('SMXTabBarIOS');
-var BrandColors = require('SMXBrandColors');
-var SMXTabBarItemIOS = SMXTabBarIOS.Item;
+
+var BrandColors = {
+  Facebook: '#3b5998',
+  Twitter: '#55acee'
+};
+
+var { Icon, TabBarIOS, } = require('react-native-icons');
+var TabBarItemIOS = TabBarIOS.Item;
 
 var Example = React.createClass({
   getInitialState: function() {
@@ -28,12 +32,12 @@ var Example = React.createClass({
   },
   render: function () {
     return (
-      <SMXTabBarIOS
+      <TabBarIOS
         selectedTab={this.state.selectedTab}
         tintColor={'#c1d82f'}
         barTintColor={'#000000'}
         styles={styles.tabBar}>
-        <SMXTabBarItemIOS
+        <TabBarItemIOS
           name="home"
           iconName={'ion|ios-home-outline'}
           title={''}
@@ -46,8 +50,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-        <SMXTabBarItemIOS
+        </TabBarItemIOS>
+        <TabBarItemIOS
             name="articles"
             iconName={'ion|ios-paper-outline'}
             title={''}
@@ -60,8 +64,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-        <SMXTabBarItemIOS
+        </TabBarItemIOS>
+        <TabBarItemIOS
             name="messages"
             iconName={'ion|chatboxes'}
             title={''}
@@ -74,8 +78,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-        <SMXTabBarItemIOS
+        </TabBarItemIOS>
+        <TabBarItemIOS
             name="settings"
             iconName={'ion|ios-gear'}
             title={''}
@@ -88,8 +92,8 @@ var Example = React.createClass({
             });
           }}>
           {this._renderContent()}
-        </SMXTabBarItemIOS>
-      </SMXTabBarIOS>
+        </TabBarItemIOS>
+      </TabBarIOS>
     );
   },
   _renderContent: function () {
@@ -132,7 +136,7 @@ var Example = React.createClass({
             name='fontawesome|twitter'
             size={40}
             color='#ffffff'
-            style={styles.twitterIcon}/>
+            style={[styles.twitterIcon, {backgroundColor: 'transparent'}]} />
         </Icon>
 
         <Text style={styles.header}>

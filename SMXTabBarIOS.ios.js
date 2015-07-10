@@ -5,26 +5,30 @@
  */
 'use strict';
 
-var React = require('React');
-var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
-var SMXTabBarIconItemIOS = require('SMXTabBarItemIOS');
-var StyleSheet = require('StyleSheet');
-var merge = require('merge');
-
-var createReactNativeComponentClass = require('createReactNativeComponentClass');
+var React = require('react-native');
+var { StyleSheet, requireNativeComponent, PropTypes, } = React;
+var SMXTabBarIconItemIOS = require('./SMXTabBarIconItemIOS.ios.js');
 
 var SMXTabBarIOS = React.createClass({
+  propTypes: {
+    tintColor: PropTypes.string,
+    barTintColor: PropTypes.string,
+    translucent: PropTypes.bool,
+  },
+
   statics: {
     Item: SMXTabBarIconItemIOS,
   },
+
   render: function () {
-    var NativeProps = {
+    var nativeProps = {
       tintColor : this.props.tintColor,
       barTintColor : this.props.barTintColor,
       translucent : this.props.translucent
     };
+
     return (
-      <SMXIconTabBar style={[styles.tabGroup, this.props.style]} {...NativeProps}>
+      <SMXIconTabBar style={[styles.tabGroup, this.props.style]} {...nativeProps}>
         {this.props.children}
       </SMXIconTabBar>
     );
@@ -37,14 +41,6 @@ var styles = StyleSheet.create({
   }
 });
 
-var config = {
-  validAttributes: merge(ReactNativeViewAttributes.UIView, {
-    tintColor: true,
-    barTintColor: true,
-    translucent: true
-  }),
-  uiViewClassName: 'SMXTabBar',
-};
-var SMXIconTabBar = createReactNativeComponentClass(config);
+var SMXIconTabBar = requireNativeComponent('SMXTabBar', SMXTabBarIOS);
 
 module.exports = SMXTabBarIOS;
