@@ -125,6 +125,13 @@ var Example = React.createClass({
         </View>
 
         <Text style={styles.header}>
+          {'Material Icons'}
+        </Text>
+
+          <Icon name='material|face' size={90} style={{width:90, height: 90}} color='gray' />
+
+
+        <Text style={styles.header}>
             {'Stacked Icons!'}
         </Text>
         <Icon

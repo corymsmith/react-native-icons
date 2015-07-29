@@ -8,10 +8,11 @@ A React Native wrapper on top of [https://github.com/PrideChung/FontAwesomeKit].
 
 Currently FontAwesomeKit supports **4** different icon fonts.
 
-- [FontAwesome 4.2](http://fortawesome.github.io/Font-Awesome/) Contains **479** icons
+- [FontAwesome 4.4](http://fortawesome.github.io/Font-Awesome/) Contains **585** icons
 - [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
+- [Material design icons ](https://github.com/google/material-design-icons) Contains **744** social icons.
 
 An icon has a name, size, and a color (optional)
 
@@ -59,6 +60,14 @@ var { Icon, } = require('react-native-icons');
   color='#777777'
   style={styles.lightbulb}
 />
+
+<Icon
+  name='material|face'
+  size={30}
+  color='#333333'
+  style={styles.face}
+/>
+
 ```
 
 ## Stacked icons

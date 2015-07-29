@@ -21,6 +21,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		2F4DA3581ACE2DDC00CC8346 /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4DA3551ACE2DCD00CC8346 /* libReactNativeIcons.a */; };
+		2F615A2D1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A2C1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		CE90A3461B50803400CB0E5D /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE90A3421B50803400CB0E5D /* FontAwesome.otf */; };
 		CE90A3471B50803400CB0E5D /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90A3431B50803400CB0E5D /* foundation-icons.ttf */; };
@@ -112,6 +113,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOS/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2F4DA34F1ACE2DCD00CC8346 /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
+		2F615A2C1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Material-Design-Iconic-Font.ttf"; path = "../../FontAwesomeKit_forked/FontAwesomeKit/Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		CE90A3421B50803400CB0E5D /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = ../iOS/ReactNativeIcons/Libraries/FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
 		CE90A3431B50803400CB0E5D /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "../iOS/ReactNativeIcons/Libraries/FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		13B07FAE1A68108700A75B9A /* example */ = {
 			isa = PBXGroup;
 			children = (
+				2F615A2C1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf */,
 				CE90A3421B50803400CB0E5D /* FontAwesome.otf */,
 				CE90A3431B50803400CB0E5D /* foundation-icons.ttf */,
 				CE90A3441B50803400CB0E5D /* ionicons.ttf */,
@@ -429,6 +432,7 @@
 				CE90A3461B50803400CB0E5D /* FontAwesome.otf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				CE90A3471B50803400CB0E5D /* foundation-icons.ttf in Resources */,
+				2F615A2D1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
