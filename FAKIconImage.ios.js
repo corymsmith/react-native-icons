@@ -5,24 +5,27 @@
  */
 'use strict';
 
-var EdgeInsetsPropType = require('EdgeInsetsPropType');
-var NativeMethodsMixin = require('NativeMethodsMixin');
-var NativeModules = require('NativeModules');
-var PropTypes = require('ReactPropTypes');
-var ImageResizeMode = require('ImageResizeMode');
-var ImageStylePropTypes = require('ImageStylePropTypes');
-var React = require('React');
+var React = require('react-native');
+
+var EdgeInsetsPropType = React.EdgeInsetsPropType;
+var NativeMethodsMixin = React.NativeMethodsMixin;
+var NativeModules = React.NativeModules;
+var PropTypes = React.PropTypes;
+var ImageResizeMode = React.ImageResizeMode;
+var ImageStylePropTypes = React.ImageStylePropTypes;
+var StyleSheet = React.StyleSheet;
+
 var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
-var StyleSheet = require('StyleSheet');
 var StyleSheetPropType = require('StyleSheetPropType');
 
 var createReactNativeComponentClass = require('createReactNativeComponentClass');
 var flattenStyle = require('flattenStyle');
 var insetsDiffer = require('insetsDiffer');
+var deepDiffer = require('deepDiffer');
+
 var invariant = require('invariant');
 var merge = require('merge');
 var warning = require('warning');
-var deepDiffer = require('deepDiffer');
 
 var FAKIconImage = React.createClass({
     propTypes: {
