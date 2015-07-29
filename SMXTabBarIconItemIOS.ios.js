@@ -6,11 +6,7 @@
 'use strict';
 
 var React = require('react-native');
-var { Image, StyleSheet, View, requireNativeComponent, PropTypes, } = React;
-
-// TODO: Replace this with a destructured require like above once 0.8.0
-// is released, and set minimum version
-var Dimensions = require('react-native/Libraries/Utilities/Dimensions');
+var { Image, StyleSheet, View, requireNativeComponent, PropTypes, Dimensions} = React;
 
 var onlyChild = React.Children.only;
 
