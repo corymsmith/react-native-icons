@@ -29,6 +29,7 @@ An icon has a name, size, and a color (optional)
 
 - You only need to include the icon font files you want to use 
 - Icon style must set a width and height, or the icon will not be visible
+- You may need to restart your node server for the icon font files to be included.
 
 ## Example of icons
 
