@@ -43,6 +43,8 @@ RCT_CUSTOM_VIEW_PROPERTY(icon, NSDictionary, SMXTabBarItem)
             target = [FAKZocial class];
         } else if([fontPrefix isEqualToString:@"foundation"]) {
             target = [FAKFoundationIcons class];
+        } else if([fontPrefix isEqualToString:@"material"]) {
+            target = [FAKMaterial class];
         }
         
         SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@IconWithSize:",[self camelcase:iconIdentifier]]);
