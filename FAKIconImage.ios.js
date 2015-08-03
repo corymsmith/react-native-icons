@@ -6,13 +6,11 @@
 'use strict';
 
 var React = require('react-native');
-var { StyleSheet } = React;
+var { StyleSheet, View } = React;
 
 var NativeMethodsMixin = React.NativeMethodsMixin;
-var ImageStylePropTypes = React.ImageStylePropTypes;
 
 var ReactNativeViewAttributes = require('ReactNativeViewAttributes');
-var StyleSheetPropType = require('StyleSheetPropType');
 
 var createReactNativeComponentClass = require('createReactNativeComponentClass');
 
@@ -38,7 +36,7 @@ var FAKIconImage = React.createClass({
      */
     accessibilityLabel: React.PropTypes.string,
 
-    style: StyleSheetPropType(ImageStylePropTypes),
+    style: View.propTypes.style,
     /**
      * testID - A unique identifier for this element to be used in UI Automation
      * testing scripts.
