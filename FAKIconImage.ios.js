@@ -6,9 +6,8 @@
 'use strict';
 
 var React = require('react-native');
-var { NativeModules, Text, StyleSheet, requireNativeComponent } = React;
+var { StyleSheet } = React;
 
-var EdgeInsetsPropType = React.EdgeInsetsPropType;
 var NativeMethodsMixin = React.NativeMethodsMixin;
 var ImageStylePropTypes = React.ImageStylePropTypes;
 
