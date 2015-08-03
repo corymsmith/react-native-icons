@@ -5,10 +5,8 @@
 
 'use strict';
 
-var Dimensions = require('Dimensions');
-var React = require('React');
-var View = require('View');
-var StyleSheet = require('StyleSheet');
+var React = require('react-native');
+var { StyleSheet, View, Dimensions} = React;
 
 var DummyTab = React.createClass({
   render: function() {
