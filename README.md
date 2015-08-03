@@ -6,7 +6,7 @@
 
 A React Native wrapper on top of [https://github.com/PrideChung/FontAwesomeKit].
 
-Currently FontAwesomeKit supports **4** different icon fonts.
+Currently we support **5** different icon fonts and **2444** icons.
 
 - [FontAwesome 4.4](http://fortawesome.github.io/Font-Awesome/) Contains **585** icons
 - [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
