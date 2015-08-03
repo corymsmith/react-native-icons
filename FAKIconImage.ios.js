@@ -19,9 +19,9 @@ var createReactNativeComponentClass = require('createReactNativeComponentClass')
 
 var deepDiffer = require('deepDiffer');
 
-var invariant = require('invariant');
 var merge = require('merge');
 
+var shimAssert = require('./shim-assert');
 
 var FAKIconImage = React.createClass({
   propTypes: {
@@ -61,13 +61,13 @@ var FAKIconImage = React.createClass({
   render: function () {
 
     var style = [styles.base, this.props.style];
-    invariant(style, "style must be initialized");
+    shimAssert.basic( style, 'style must be initialized');
 
     var name = this.props.name;
-    invariant(name, "name must be initialized");
+    shimAssert.basic( name, 'name must be initialized');
 
     var size = this.props.size;
-    invariant(size, "size must be initialized");
+    shimAssert.basic( size, 'size must be initialized');
 
     var color = this.props.color;
 
