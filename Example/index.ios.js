@@ -10,8 +10,9 @@ var {
   StyleSheet,
   Text,
   View,
-  ScrollView
-} = React;
+  ScrollView,
+  //Animated
+  } = React;
 
 
 var BrandColors = {
@@ -19,15 +20,16 @@ var BrandColors = {
   Twitter: '#55acee'
 };
 
-var { Icon, TabBarIOS, } = require('react-native-icons');
+var { Icon, TabBarIOS, Spinner} = require('react-native-icons');
 var TabBarItemIOS = TabBarIOS.Item;
 
 var Example = React.createClass({
-  getInitialState: function() {
+  getInitialState: function () {
     return {
       selectedTab: 'home',
       notifCount: 0,
       presses: 0,
+      //rotation: Animated.Value(0)
     };
   },
   render: function () {
@@ -52,13 +54,13 @@ var Example = React.createClass({
           {this._renderContent()}
         </TabBarItemIOS>
         <TabBarItemIOS
-            name="articles"
-            iconName={'ion|ios-paper-outline'}
-            title={''}
-            iconSize={32}
-            accessibilityLabel="Articles Tab"
-            selected={this.state.selectedTab === 'articles'}
-            onPress={() => {
+          name="articles"
+          iconName={'ion|ios-paper-outline'}
+          title={''}
+          iconSize={32}
+          accessibilityLabel="Articles Tab"
+          selected={this.state.selectedTab === 'articles'}
+          onPress={() => {
             this.setState({
               selectedTab: 'articles',
             });
@@ -66,13 +68,13 @@ var Example = React.createClass({
           {this._renderContent()}
         </TabBarItemIOS>
         <TabBarItemIOS
-            name="messages"
-            iconName={'ion|chatboxes'}
-            title={''}
-            iconSize={32}
-            accessibilityLabel="Messages Tab"
-            selected={this.state.selectedTab === 'messages'}
-            onPress={() => {
+          name="messages"
+          iconName={'ion|chatboxes'}
+          title={''}
+          iconSize={32}
+          accessibilityLabel="Messages Tab"
+          selected={this.state.selectedTab === 'messages'}
+          onPress={() => {
             this.setState({
               selectedTab: 'messages',
             });
@@ -80,13 +82,13 @@ var Example = React.createClass({
           {this._renderContent()}
         </TabBarItemIOS>
         <TabBarItemIOS
-            name="settings"
-            iconName={'ion|ios-gear'}
-            title={''}
-            iconSize={32}
-            accessibilityLabel="Settings Tab"
-            selected={this.state.selectedTab === 'settings'}
-            onPress={() => {
+          name="settings"
+          iconName={'ion|ios-gear'}
+          title={''}
+          iconSize={32}
+          accessibilityLabel="Settings Tab"
+          selected={this.state.selectedTab === 'settings'}
+          onPress={() => {
             this.setState({
               selectedTab: 'settings',
             });
@@ -105,19 +107,19 @@ var Example = React.createClass({
             size={40}
             color='#887700'
             style={styles.beer}
-          />
+            />
           <Icon
-            name='zocial|github'
+            name='material|face'
             size={40}
             color='black'
             style={styles.github}
-          />
+            />
           <Icon
             name='fontawesome|facebook-square'
             size={40}
             color={BrandColors.Facebook}
             style={styles.facebook}
-          />
+            />
           <Icon
             name='foundation|lightbulb'
             size={40}
@@ -128,11 +130,22 @@ var Example = React.createClass({
           {'Material Icons'}
         </Text>
 
-          <Icon name='material|face' size={90} style={{width:90, height: 90}} color='gray' />
+        <View style={styles.topContainer}>
 
+          <Spinner name='fontawesome|spinner' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-a' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-b' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-c' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-d' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+        </View>
 
         <Text style={styles.header}>
-            {'Stacked Icons!'}
+          {'Stacked Icons!'}
         </Text>
         <Icon
           name='fontawesome|square'
@@ -143,11 +156,11 @@ var Example = React.createClass({
             name='fontawesome|twitter'
             size={40}
             color='#ffffff'
-            style={[styles.twitterIcon, {backgroundColor: 'transparent'}]} />
+            style={[styles.twitterIcon, {backgroundColor: 'transparent'}]}/>
         </Icon>
 
         <Text style={styles.header}>
-            {'Create social sign in buttons'}
+          {'Create social sign in buttons'}
         </Text>
         <View
           style={styles.signInWithTwitterButton}>
@@ -178,8 +191,9 @@ var Example = React.createClass({
   }
 });
 
+
 var styles = StyleSheet.create({
-  tabBar : {
+  tabBar: {
     backgroundColor: '#dfdfdf',
     flex: 1,
     color: '#ff0000',
