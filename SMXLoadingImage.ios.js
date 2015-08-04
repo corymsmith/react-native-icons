@@ -8,8 +8,6 @@
 var React = require('react-native');
 var { StyleSheet, View, requireNativeComponent, Animated, Easing } = React;
 
-var merge = require('merge');
-
 var shimAssert = require('./shim-assert');
 
 var ICON_REF = 'icon';
@@ -100,13 +98,13 @@ var SMXLoadingImage = React.createClass({
 
     var color = this.props.color;
 
-    var nativeProps = merge(this.props, {
-      icon: {
-        name: name,
-        size: size,
-        color: color
-      }
-    });
+    var nativeProps = Object.assign({},this.props);
+    nativeProps.icon = {
+      name: name,
+      size: size,
+      color: color
+    };
+
     return <Animated.View style={[styles.base, style, transformStyle]}>
       <SMXLoadingImageView style={{backgroundColor: 'transparent'}} {...nativeProps} />
     </Animated.View>;

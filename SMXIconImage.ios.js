@@ -7,7 +7,6 @@
 
 var React = require('react-native');
 var { StyleSheet, View, requireNativeComponent } = React;
-var merge = require('merge');
 var shimAssert = require('./shim-assert');
 
 var ICON_REF = 'icon';
@@ -52,14 +51,14 @@ var SMXIconImage = React.createClass({
 
     var color = this.props.color;
 
-    var nativeProps = merge(this.props, {
-      style,
-      icon: {
-        name: name,
-        size: size,
-        color: color
-      }
-    });
+    var nativeProps = Object.assign({},this.props);
+    nativeProps.style = style;
+    nativeProps.icon = {
+      name: name,
+      size: size,
+      color: color
+    };
+
     return <SMXIconImageView {...nativeProps} />;
   }
 });
