@@ -12,8 +12,6 @@ var shimAssert = require('./shim-assert');
 
 var ICON_REF = 'icon';
 
-var TIMES = 400;
-
 var SMXLoadingImage = React.createClass({
   propTypes: {
     name: React.PropTypes.string,
@@ -40,37 +38,25 @@ var SMXLoadingImage = React.createClass({
 
   getInitialState: function () {
     return {
-      theta: new Animated.Value(45),
-      rotate: new Animated.Value('0deg'),
-      enter: new Animated.Value(0),
       angle: new Animated.Value(0)
     };
   },
 
   setNativeProps(props) {
-    console.warn('setNativeProps');
-    console.warn(props);
     this.refs[ICON_REF].setNativeProps(props);
   },
 
   _animate: function () {
     this.state.angle.setValue(0);
     this._anim = Animated.timing(this.state.angle, {
-      toValue: 360 * TIMES,
-      duration: 1200 * TIMES,
+      toValue: 360,
+      duration: 1200,
       easing: Easing.linear
     }).start(this._animate);
   },
 
   componentDidMount: function () {
     this._animate();
-  },
-
-  _animateEntrance: function () {
-    Animated.spring(
-      this.state.enter,
-      {toValue: 1, friction: 8}
-    ).start();
   },
 
   render: function () {
@@ -86,7 +72,6 @@ var SMXLoadingImage = React.createClass({
     };
 
     var style = [styles.base, this.props.style];
-    console.log(style);
 
     shimAssert.basic(style, 'style must be initialized');
 
