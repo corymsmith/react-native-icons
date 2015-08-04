@@ -1,4 +1,4 @@
 module.exports = {
-  Icon: require('./FAKIconImage.ios'),
+  Icon: require('./SMXIconImage.ios'),
   TabBarIOS: require('./SMXTabBarIOS.ios'),
 };

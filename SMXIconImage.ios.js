@@ -1,6 +1,6 @@
 /**
  *
- * @providesModule FAKIconImage
+ * @providesModule SMXIconImage
  * @flow
  */
 'use strict';
@@ -12,7 +12,7 @@ var shimAssert = require('./shim-assert');
 
 var ICON_REF = 'icon';
 
-var FAKIconImage = React.createClass({
+var SMXIconImage = React.createClass({
   propTypes: {
     name: React.PropTypes.string,
     size: React.PropTypes.number,
@@ -33,7 +33,7 @@ var FAKIconImage = React.createClass({
      * testing scripts.
      */
     testID: React.PropTypes.string,
-    icon: React.PropTypes.array
+    icon: React.PropTypes.object
   },
 
   setNativeProps(props) {
@@ -60,7 +60,7 @@ var FAKIconImage = React.createClass({
         color: color
       }
     });
-    return <FAKIconImageView {...nativeProps} />;
+    return <SMXIconImageView {...nativeProps} />;
   }
 });
 
@@ -69,6 +69,7 @@ var styles = StyleSheet.create({
     overflow: 'hidden'
   }
 });
-var FAKIconImageView = requireNativeComponent('FAKIconImage', FAKIconImage);
 
-module.exports = FAKIconImage;
+var SMXIconImageView = requireNativeComponent('FAKIconImage', SMXIconImage);
+
+module.exports = SMXIconImage;
