@@ -11,6 +11,7 @@ var {
   Text,
   View,
   ScrollView,
+  TouchableHighlight
   //Animated
   } = React;
 
@@ -102,12 +103,16 @@ var Example = React.createClass({
     return (
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.topContainer}>
-          <Icon
-            name='ion|beer'
-            size={40}
-            color='#887700'
-            style={styles.beer}
-            />
+          <TouchableHighlight
+            underlayColor="transparent"
+            onPress={() => alert('Beer!')}>
+            <Icon
+              name='ion|beer'
+              size={40}
+              color='#887700'
+              style={styles.beer}
+              />
+          </TouchableHighlight>
           <Icon
             name='material|face'
             size={40}

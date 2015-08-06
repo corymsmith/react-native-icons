@@ -10,8 +10,6 @@ var { StyleSheet, View, requireNativeComponent, Animated, Easing } = React;
 
 var shimAssert = require('./shim-assert');
 
-var ICON_REF = 'icon';
-
 var SMXLoadingImage = React.createClass({
   propTypes: {
     name: React.PropTypes.string,
@@ -43,7 +41,7 @@ var SMXLoadingImage = React.createClass({
   },
 
   setNativeProps(props) {
-    this.refs[ICON_REF].setNativeProps(props);
+
   },
 
   _animate: function () {

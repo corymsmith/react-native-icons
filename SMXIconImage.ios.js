@@ -59,7 +59,7 @@ var SMXIconImage = React.createClass({
       color: color
     };
 
-    return <SMXIconImageView {...nativeProps} />;
+    return <SMXIconImageView {...nativeProps} ref={ICON_REF} />;
   }
 });
 
