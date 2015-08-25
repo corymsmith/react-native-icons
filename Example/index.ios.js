@@ -44,6 +44,7 @@ var Example = React.createClass({
           name="home"
           iconName={'ion|ios-home-outline'}
           title={''}
+          badgeValue={3}
           iconSize={32}
           accessibilityLabel="Home Tab"
           selected={this.state.selectedTab === 'home'}
