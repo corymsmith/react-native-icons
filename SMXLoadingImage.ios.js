@@ -40,13 +40,13 @@ var SMXLoadingImage = React.createClass({
     };
   },
 
-  setNativeProps(props) {
+  setNativeProps(props:Object) {
 
   },
 
   _animate: function () {
     this.state.angle.setValue(0);
-    this._anim = Animated.timing(this.state.angle, {
+    Animated.timing(this.state.angle, {
       toValue: 360,
       duration: 1200,
       easing: Easing.linear
@@ -57,7 +57,7 @@ var SMXLoadingImage = React.createClass({
     this._animate();
   },
 
-  render: function () {
+  render: function ():ReactElement {
     var transformStyle = {
       transform: [
         {

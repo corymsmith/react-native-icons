@@ -35,7 +35,7 @@ var SMXIconImage = React.createClass({
     icon: React.PropTypes.object
   },
 
-  setNativeProps(props) {
+  setNativeProps(props:Object) {
     this.refs[ICON_REF].setNativeProps(props);
   },
 
