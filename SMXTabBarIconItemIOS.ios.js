@@ -31,6 +31,7 @@ var SmixxTabBarItemIOS = React.createClass({
     badgeValue: PropTypes.string,
     title: PropTypes.string,
     icon: PropTypes.object,
+    selectedIcon: PropTypes.object,
   },
 
   getInitialState: function() {
@@ -65,12 +66,20 @@ render: function() {
     tabContents = <View />;
   }
 
-  var icon = {name : this.props.iconName, size: this.props.iconSize ? this.props.iconSize : 28};
+  var iconName = this.props.iconName;
+  var iconSize = this.props.iconSize || 28;
+
+  // defaults selectedIconName to iconName, selectedIconSize to iconSize
+  var selectedIconName = this.props.selectedIconName || this.props.iconName;
+  var selectedIconSize = this.props.selectedIconSize || this.props.iconSize;
+
+  var icon = {name : iconName, size: iconSize};
+  var selectedIcon = {name: selectedIconName, size: selectedIconSize};
 
   return (
     <SmixxTabBarItem
       icon={icon}
-      selectedIcon={icon}
+      selectedIcon={selectedIcon}
       onPress={this.props.onPress}
       selected={this.props.selected}
       badgeValue={this.props.badgeValue}
