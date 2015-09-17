@@ -1,12 +1,12 @@
 {
-  "name": "react-native-icons-example",
+  "name": "example",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "react-native": ">= 0.10.x || 0.10.0-rc",
+    "react-native": ">= 0.11.x || 0.10.0-rc",
     "react-native-icons" : "file:../"
   }
 }
