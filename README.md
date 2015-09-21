@@ -33,7 +33,7 @@ An icon has a name, size, and a color (optional)
 
 ## Example of icons
 
-```
+```js
 var { Icon, } = require('react-native-icons');
 
 
@@ -73,7 +73,7 @@ var { Icon, } = require('react-native-icons');
 
 ## Stacked icons
 
-```
+```js
 <Icon
   name='fontawesome|square'
   size={80}
@@ -89,7 +89,7 @@ var { Icon, } = require('react-native-icons');
 
 ## Custom tab bar
 
-```javascript
+```js
 
 var { TabBarIOS, } = require('react-native-icons');
 var TabBarItemIOS = TabBarIOS.Item;
@@ -112,6 +112,7 @@ var Example = React.createClass({
         <TabBarItemIOS
           name="home"
           iconName={'ion|ios-home-outline'}
+          selectedIconName={'ion|ios-home'}
           title={''}
           iconSize={32}
           accessibilityLabel="Home Tab"
@@ -126,6 +127,7 @@ var Example = React.createClass({
         <TabBarItemIOS
             name="articles"
             iconName={'ion|ios-paper-outline'}
+            selectedIconName={'ion|ios-paper'}
             title={''}
             iconSize={32}
             accessibilityLabel="Articles Tab"
@@ -153,7 +155,8 @@ var Example = React.createClass({
         </TabBarItemIOS>
         <TabBarItemIOS
             name="settings"
-            iconName={'ion|ios-gear'}
+            iconName={'ion|ios-gear-outline'}
+            selectedIconName={'ion|ios-gear'}
             title={''}
             iconSize={32}
             accessibilityLabel="Settings Tab"
@@ -170,6 +173,8 @@ var Example = React.createClass({
   }
 });
 ```
+
+**Note:** `selectedIconName` is optional. It defaults to `iconName` if not set. Also, there's another optional property named `selectedIconSize`, if you need to change the icon size when the tab is selected.
 
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/6721696/stacked-demo.png)
