@@ -6,7 +6,7 @@
 'use strict';
 
 var React = require('react-native');
-var { StyleSheet, View, requireNativeComponent, Animated, Easing } = React;
+var { StyleSheet, View, requireNativeComponent, Animated, Easing, processColor } = React;
 
 var shimAssert = require('./shim-assert');
 
@@ -85,7 +85,7 @@ var SMXLoadingImage = React.createClass({
     nativeProps.icon = {
       name: name,
       size: size,
-      color: color
+      color: processColor(color)
     };
 
     return <Animated.View style={[styles.base, style, transformStyle]}>

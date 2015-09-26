@@ -6,7 +6,7 @@
 'use strict';
 
 var React = require('react-native');
-var { StyleSheet, View, requireNativeComponent } = React;
+var { StyleSheet, View, requireNativeComponent, processColor } = React;
 var shimAssert = require('./shim-assert');
 
 var ICON_REF = 'icon';
@@ -56,7 +56,7 @@ var SMXIconImage = React.createClass({
     nativeProps.icon = {
       name: name,
       size: size,
-      color: color
+      color: processColor(color)
     };
 
     return <SMXIconImageView {...nativeProps} ref={ICON_REF} />;
