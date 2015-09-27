@@ -2,36 +2,26 @@ package com.smixx.reactnativeicons;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.text.Html;
-import android.text.Spanned;
-import android.text.SpannedString;
 import android.util.Log;
 
-import com.facebook.react.uimanager.BaseViewManager;
 import com.facebook.react.uimanager.ReactProp;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.views.text.ReactTextShadowNode;
 import com.facebook.react.views.text.ReactTextView;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Nullable;
 
-//public class IconManager extends BaseViewManager<ReactTextView, ReactTextShadowNode> {
 public class IconManager extends SimpleViewManager<ReactTextView> {
 
+    private static final Map<String, Typeface> sTypefaceCache = new HashMap<String, Typeface>();
     public static final String REACT_CLASS = "SMXIconImage";
     private static final String TAG = "IconManager";
     private HashMap<String, IconFont> mAllIconFonts = new HashMap<>();
-//    private ThemedReactContext mContext;
 
     @Override
     public String getName() {
@@ -60,14 +50,23 @@ public class IconManager extends SimpleViewManager<ReactTextView> {
             String[] parts = name.split("\\|");
             String fontName = parts[0];
             String iconName = parts[1];
-//            Log.d(TAG, "setName: font: " + fontName + " icon: " + iconName);
 
             IconFont font = mAllIconFonts.get(fontName);
 
-            Typeface typeface = font.getTypeFaceForFont(view.getContext(), font);
-            if (typeface != null) {
-                view.setTypeface(typeface);
-                view.setText(font.getCharCodeForIconName(view.getContext(), iconName));
+            if (font != null) {
+                Typeface typeface;
+                if (sTypefaceCache.get(fontName) == null) {
+                    Log.d(TAG, fontName + " not in cache");
+                    typeface = font.getTypeFaceForFont(view.getContext(), font);
+                } else {
+                    Log.d(TAG, fontName + " from cache");
+                    typeface = sTypefaceCache.get(fontName);
+                }
+                if (typeface != null) {
+                    sTypefaceCache.put(fontName, typeface);
+                    view.setTypeface(typeface);
+                    view.setText(font.getCharCodeForIconName(view.getContext(), iconName));
+                }
             }
         }
     }
@@ -80,21 +79,24 @@ public class IconManager extends SimpleViewManager<ReactTextView> {
 
     @Override
     public ReactTextView createViewInstance(ThemedReactContext context) {
-//        mContext = context;
-//        Log.d(TAG, "createViewInstance");
+        logAssets(context);
+
         ReactTextView textView = new ReactTextView(
                 context);
         return textView;
     }
 
-    @Override
-    public void updateExtraData(ReactTextView view, Object extraData) {
-        Log.d(TAG, "updateExtraData" + "|" + extraData.toString());
-        //        view.setText((Spanned) extsdfsa");
+    private void logAssets(Context context) {
+        Log.d(TAG, "createViewInstance: assets");
+        Log.d(TAG, "----------------------------");
+        try {
+            String[] list = context.getAssets().list("");
+            for (String str : list) {
+                Log.d(TAG, str);
+            }
+            Log.d(TAG, "---- END ASSETS");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-
-//    @Override
-//    public ReactTextShadowNode createCSSNodeInstance() {
-//        return new ReactTextShadowNode(false);
-//    }
 }

@@ -9,7 +9,6 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 
 public class ReactNativeIcons implements ReactPackage {
@@ -31,7 +30,7 @@ public class ReactNativeIcons implements ReactPackage {
         mAllIconFonts = new ArrayList<>(Arrays.<IconFont>asList(
                 new IconFont("fontawesome", "FontAwesome.otf"),
                 new IconFont("ion", "ionicons.ttf"),
-                new IconFont("zocial", "zocial-regular-webfont.ttf"),
+                new IconFont("zocial", "zocial.ttf"),
                 new IconFont("foundation", "foundation-icons.ttf"),
                 new IconFont("material", "Material-Design-Iconic-Font.ttf")
         ));

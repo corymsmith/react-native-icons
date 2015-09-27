@@ -10,31 +10,74 @@ var {
   StyleSheet,
   Text,
   View,
+  ScrollView,
   TouchableHighlight
   } = React;
 
 var { Icon } = require('react-native-icons');
 
+var BrandColors = {
+  Facebook: '#3b5998',
+  Twitter: '#55acee'
+};
+
 var example = React.createClass({
   render: function () {
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.container}>
+        <View >
 
+          <Text style={styles.header}>
+            {'Ionic Icons'}
+          </Text>
+          <TouchableHighlight
+            underlayColor="transparent"
+            onPress={() => console.log('Tapped Beer!')}>
         <Icon
-          name='ion|alert'
-          size={200}
-          style={styles.beerIcon}
-          color='#8077ff'
+              name='ion|beer'
+              size={100}
+              color='#887700'
+              style={styles.beer}
           />
-
+          </TouchableHighlight>
         <Icon
-          name='ion|android-bicycle'
-          size={200}
-          style={styles.beerIcon}
-          color='#8077ff'
+            name='typicons|anchor'
+            size={100}
+            color='gray'
+            style={styles.lightbulb}
           />
+          <Icon
+            name='material|face'
+            size={80}
+            color='black'
+            style={styles.face}
+            />
+          <Icon
+            name='fontawesome|facebook-square'
+            size={40}
+            color={BrandColors.Facebook}
+            style={styles.facebook}
+            />
+          <Icon
+            name='foundation|lightbulb'
+            size={40}
+            style={styles.lightbulb}/>
 
+          <Icon
+            name='zocial|twitter'
+            size={60}
+            color='red'
+            style={styles.lightbulb}/>
+
+          <Icon
+            name='zocial|facebook'
+            size={60}
+            color='black'
+            style={styles.lightbulb}/>
       </View>
+
+
+      </ScrollView>
     );
 
   }
@@ -88,7 +131,31 @@ var styles = StyleSheet.create({
   testIcon: {
     fontFamily: "SOUPER3",
     fontSize: 44
-  }
+  },
+
+  beer: {
+    width: 70,
+    height: 70,
+    margin: 10,
+    backgroundColor: 'pink'
+  },
+  face: {
+    width: 70,
+    height: 70,
+    margin: 10,
+    backgroundColor: 'pink'
+  },
+  facebook: {
+    width: 70,
+    height: 70,
+    margin: 10
+  },
+  lightbulb: {
+    width: 70,
+    height: 70,
+    color: "red",
+    margin: 10
+  },
 });
 
 AppRegistry.registerComponent('example', () => example);
