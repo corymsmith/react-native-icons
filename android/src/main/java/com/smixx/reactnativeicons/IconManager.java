@@ -3,6 +3,7 @@ package com.smixx.reactnativeicons;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.Log;
+import android.view.Gravity;
 
 import com.facebook.react.uimanager.ReactProp;
 import com.facebook.react.uimanager.SimpleViewManager;

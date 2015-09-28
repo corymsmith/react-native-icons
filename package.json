@@ -1,6 +1,6 @@
 {
   "name": "react-native-icons",
-  "version": "0.4.0",
+  "version": "0.5.0-rc",
   "description": "Use 1000's of icon fonts in your React Native app including the tab bar.",
   "author": "Cory Smith <cory.m.smith@gmail.com>",
   "keywords": [
@@ -13,10 +13,15 @@
     "ui",
     "react native icons",
     "font",
-    "tab bar"
+    "tab bar",
+    "ios",
+    "android",
+    "icon",
+    "font",
+    "fonts"
   ],
   "devDependencies": {
-    "react-native": ">= 0.11.x || 0.11.0-rc"
+    "react-native": ">= 0.12.x || 0.12.0-rc"
   },
   "homepage": "https://github.com/corymsmith/react-native-icons",
   "bugs": "https://github.com/corymsmith/react-native-icons/issues",
