@@ -26,7 +26,7 @@ npm install react-native-icons@latest --save
 ```gradle
 ...
 include ':react-native-icons'
-project(':react-native-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-icons')
+project(':react-native-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-icons/android')
 ```
 
 * In `android/app/build.gradle`
