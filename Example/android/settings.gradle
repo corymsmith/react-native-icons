@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+
+include ':app'
+include ':react-native-icons'
+project(':react-native-icons').projectDir = new File(settingsDir, '../../android')
