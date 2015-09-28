@@ -63,12 +63,9 @@ public class IconFont {
 
 
     public Spanned getCharCodeForIconName(Context context, String iconName) {
-        Log.d(TAG, "getCharCodeForIconName:" + iconName);
         String character = null;
         try {
             character = getCharacterMap(context).get(iconName).toString();
-            Log.d(TAG, character);
-            Log.d(TAG, Html.fromHtml(character).toString());
             return Html.fromHtml(character);
         } catch (Exception e) {
             Log.e(TAG, "No icon named '" + iconName + "' is found in font '" + getPrefix() + "'");
@@ -82,7 +79,6 @@ public class IconFont {
         if (font.getFileName() != null) {
             try {
                 Typeface typeface = Typeface.createFromAsset(context.getAssets(), font.getFileName());
-                Log.d(TAG, "Loaded font file : " + font.getFileName() + " from assets");
                 return typeface;
             } catch (Exception ex) {
                 Log.e(TAG, "Error: " + ex.toString());

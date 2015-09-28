@@ -1,20 +1,8 @@
 # React Native Icons
 
-[![NPM](https://nodei.co/npm/react-native-icons.png?downloads=true&downloadRank=true)](https://nodei.co/npm/react-native-icons/)
+[![npm version](https://badge.fury.io/js/react-native-icons@2x.png)](http://badge.fury.io/js/react-native-icons)
 
-[![Join the chat at https://gitter.im/corymsmith/react-native-icons](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/corymsmith/react-native-icons?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-A React Native wrapper on top of [https://github.com/PrideChung/FontAwesomeKit].
-
-Currently we support **5** different icon fonts and **2444** icons.
-
-- [FontAwesome 4.4](http://fortawesome.github.io/Font-Awesome/) Contains **585** icons
-- [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
-- [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
-- [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
-- [Material design icons ](https://github.com/google/material-design-icons) Contains **744** social icons.
-
-An icon has a name, size, and a color (optional)
+Includes **5** different icon fonts and **2,444** icons.
 
 ## Installation
 
@@ -84,7 +72,16 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 }
 ```
 
+## Not supported on Android yet:
+- Tab Bar
+- Stacked Icons
+- Spinner / loading indicator
+
 ## Custom fonts
+
+### iOS
+
+Custom fonts are not yet supported for iOS
 
 ### Android
 1. Create a json file that maps css / icon name to the HTML encoded unicode character, examples in /fonts directory
@@ -112,7 +109,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 - You only need to include the icon font files you want to use 
 - Icon style must set a width and height, or the icon will not be visible
 - You may need to restart your node server for the icon font files to be included.
-
+- An icon has a name, size, and a color (optional)
 - Color can be provide via the color property or via a style 
 
 ## Example of icons
@@ -260,5 +257,12 @@ var Example = React.createClass({
 
 **Note:** `selectedIconName` is optional. It defaults to `iconName` if not set. Also, there's another optional property named `selectedIconSize`, if you need to change the icon size when the tab is selected.
 
+
+# Included icon fonts
+- [FontAwesome 4.4](http://fortawesome.github.io/Font-Awesome/) Contains **585** icons
+- [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
+- [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
+- [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
+- [Material design icons](https://github.com/google/material-design-icons) Contains **744** social icons.
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/6721696/stacked-demo.png)
