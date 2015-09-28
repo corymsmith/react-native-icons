@@ -87,6 +87,24 @@ var { Icon, } = require('react-native-icons');
 </Icon>
 ```
 
+With the following styles to center them:
+
+```js
+var styles = StyleSheet.create({
+  twitterOutline: {
+    flexDirection: 'column',
+    width: 70,
+    height: 70,
+    alignItems: 'center'
+  },
+  twitterIcon: {
+    flex: 1,
+    width: 40,
+    height: 40
+  },
+});
+```
+
 ## Custom tab bar
 
 ```js
