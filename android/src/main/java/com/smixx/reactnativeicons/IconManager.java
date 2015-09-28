@@ -79,10 +79,11 @@ public class IconManager extends SimpleViewManager<ReactTextView> {
 
     @Override
     public ReactTextView createViewInstance(ThemedReactContext context) {
-        logAssets(context);
+        //logAssets(context);
 
         ReactTextView textView = new ReactTextView(
                 context);
+        textView.setGravity(Gravity.CENTER);
         return textView;
     }
 

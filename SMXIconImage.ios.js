@@ -52,6 +52,11 @@ var SMXIconImage = React.createClass({
     var color = this.props.color;
 
     var nativeProps = Object.assign({},this.props);
+
+    if(!color && style.color) {
+      color = style.color;
+    }
+
     nativeProps.style = style;
     nativeProps.icon = {
       name: name,

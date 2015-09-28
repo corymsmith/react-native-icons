@@ -14,7 +14,7 @@ var {
   TouchableHighlight
   } = React;
 
-var { Icon, Spinner } = require('react-native-icons');
+var { Icon } = require('react-native-icons');
 
 var BrandColors = {
   Facebook: '#3b5998',
@@ -22,35 +22,6 @@ var BrandColors = {
 };
 
 var example = React.createClass({
-  //render: function () {
-  //  return (
-  //    <View style={styles.container}>
-  //
-  //      <Icon
-  //        name='ion|alert'
-  //        size={100}
-  //        style={styles.beerIcon}
-  //        color='#8077ff'
-  //        />
-  //
-  //      <Icon
-  //        name='typicons|adjust-contrast'
-  //        size={100}
-  //        style={styles.beerIcon}
-  //        color='#8077ff'
-  //        />
-  //
-  //      <Icon
-  //        name='ion|android-bicycle'
-  //        size={100}
-  //        style={styles.beerIcon}
-  //        color='#8077ff'
-  //        />
-  //
-  //    </View>
-  //  );
-  //
-  //},
   render: function () {
     return (
       <ScrollView contentContainerStyle={styles.container}>
@@ -61,7 +32,6 @@ var example = React.createClass({
             <Icon
               name='ion|beer'
               size={40}
-              color='#887700'
               style={styles.beer}
               />
           </TouchableHighlight>
@@ -69,7 +39,7 @@ var example = React.createClass({
             name='material|face'
             size={40}
             color='black'
-            style={styles.github}
+            style={styles.face}
             />
           <Icon
             name='fontawesome|facebook-square'
@@ -85,7 +55,7 @@ var example = React.createClass({
             name='typicons|anchor'
             size={40}
             color='gray'
-            style={styles.lightbulb}
+            style={styles.anchor}
             />
           <Icon
             name='zocial|twitter'
@@ -93,20 +63,6 @@ var example = React.createClass({
             color='gray'
             style={styles.lightbulb}
             />
-        </View>
-
-        <View style={styles.topContainer}>
-
-          <Spinner name='fontawesome|spinner' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
-                   color='#777'/>
-          <Spinner name='ion|load-a' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
-                   color='#777'/>
-          <Spinner name='ion|load-b' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
-                   color='#777'/>
-          <Spinner name='ion|load-c' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
-                   color='#777'/>
-          <Spinner name='ion|load-d' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
-                   color='#777'/>
         </View>
 
         <Text style={styles.header}>
@@ -177,24 +133,30 @@ var styles = StyleSheet.create({
     color: '#555555',
   },
   beer: {
-    width: 70,
-    height: 70,
-    margin: 10
+    width: 50,
+    height: 50,
+    margin: 5,
+    color: '#887700'
   },
-  github: {
-    width: 70,
-    height: 70,
-    margin: 10
+  face: {
+    width: 50,
+    height: 50,
+    margin: 5
   },
   facebook: {
-    width: 70,
-    height: 70,
-    margin: 10
+    width: 50,
+    height: 50,
+    margin: 5
   },
   lightbulb: {
-    width: 70,
-    height: 70,
-    margin: 10
+    width: 50,
+    height: 50,
+    margin: 5
+  },
+  anchor: {
+    width: 50,
+    height: 50,
+    margin: 5
   },
   twitterOutline: {
     flexDirection: 'column',

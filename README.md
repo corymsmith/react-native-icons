@@ -16,14 +16,96 @@ Currently we support **5** different icon fonts and **2444** icons.
 
 An icon has a name, size, and a color (optional)
 
-## Getting started
+## Installation
 
-1. `npm install react-native-icons@latest --save`
-2. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
-3. Go to `node_modules` ➜ `react-native-icons`➜ `ios` and add `ReactNativeIcons.xcodeproj` 
-4. Add `libReactNativeIcons.a` (from 'Products' under ReactNativeIcons.xcodeproj) to your project's `Build Phases` ➜ `Link Binary With Libraries` phase
-5. Add the font files you want to use into the `Copy Bundle Resources` build phase of your project (click the '+' and click 'Add Other...' then choose the font files from  `node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit`).
-6. Run your project (`Cmd+R`)
+```bash
+npm install react-native-icons@latest --save
+```
+
+## Getting started - iOS
+
+1. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
+2. Go to `node_modules` ➜ `react-native-icons`➜ `ios` and add `ReactNativeIcons.xcodeproj` 
+3. Add `libReactNativeIcons.a` (from 'Products' under ReactNativeIcons.xcodeproj) to your project's `Build Phases` ➜ `Link Binary With Libraries` phase
+4. Add the font files you want to use into the `Copy Bundle Resources` build phase of your project (click the '+' and click 'Add Other...' then choose the font files from  `node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit`).
+5. Run your project (`Cmd+R`)
+
+
+## Getting started - Android
+
+* In `android/setting.gradle`
+
+```gradle
+...
+include ':react-native-icons'
+project(':react-native-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-icons')
+```
+
+* In `android/app/build.gradle`
+
+```gradle
+...
+dependencies {
+    ...
+    compile project(':react-native-icons')
+}
+```
+
+* register module (in MainActivity.java)
+
+```java
+import com.smixx.reactnativeicons.ReactNativeIcons;  // <--- import
+
+public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
+  ......
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mReactRootView = new ReactRootView(this);
+
+    mReactInstanceManager = ReactInstanceManager.builder()
+      .setApplication(getApplication())
+      .setBundleAssetName("index.android.bundle")
+      .setJSMainModuleName("index.android")
+      .addPackage(new MainReactPackage())
+      .addPackage(new ReactNativeIcons())              // <------ add here
+      .setUseDeveloperSupport(BuildConfig.DEBUG)
+      .setInitialLifecycleState(LifecycleState.RESUMED)
+      .build();
+
+    mReactRootView.startReactApplication(mReactInstanceManager, "example", null);
+
+    setContentView(mReactRootView);
+  }
+
+  ......
+
+}
+```
+
+## Custom fonts
+
+### Android
+1. Create a json file that maps css / icon name to the HTML encoded unicode character, examples in /fonts directory
+2. Copy font file and .json file to your apps assets directory
+3.) In MainActivity.java, add the icon font, first parameter is the prefix you want to use (ex. typicons|globe), second is the filename of the font.
+
+```java
+ mReactInstanceManager = ReactInstanceManager.builder()
+                .setApplication(getApplication())
+                .setBundleAssetName("index.android.bundle")
+                .setJSMainModuleName("index.android")
+                .addPackage(new MainReactPackage())
+                .addPackage(new ReactNativeIcons(Arrays.asList(
+                        new IconFont("typicons", "typicons.ttf")
+                )))
+                .setUseDeveloperSupport(BuildConfig.DEBUG)
+                .setInitialLifecycleState(LifecycleState.RESUMED)
+                .build();
+
+```
+
 
 ## Notes
 
