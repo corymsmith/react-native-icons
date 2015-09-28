@@ -10,6 +10,12 @@ Includes **5** different icon fonts and **2,444** icons.
 npm install react-native-icons@latest --save
 ```
 
+If you need to support React Native version < 0.12.0-rc then please use:
+ 
+ ```bash
+ npm install react-native-icons@0.4.0 --save
+ ```
+
 ## Getting started - iOS
 
 1. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
