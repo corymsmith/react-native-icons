@@ -85,8 +85,7 @@
     for (SMXTabBarItem *tab in [self reactSubviews]) {
       UIViewController *controller = tab.reactViewController;
       if (!controller) {
-        controller = [[RCTWrapperViewController alloc] initWithContentView:tab
-                                                           eventDispatcher:_eventDispatcher];
+        controller = [[RCTWrapperViewController alloc] initWithContentView:tab];
       }
       [viewControllers addObject:controller];
     }
