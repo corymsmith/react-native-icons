@@ -110,7 +110,7 @@ class IconImage extends React.Component {
   }
 
   render() {
-        console.log('render it!!!!');
+    console.log('render it!!!!');
     var style = [styles.base, this.props.style];
     //shimAssert.basic( style, 'style must be initialized');
 
@@ -130,7 +130,8 @@ class IconImage extends React.Component {
       color: color
     };
 
-    return <RCTMyCustomView {...nativeProps} ref={ICON_REF} style={ { height: size, textAlignment: 'center' }} />;
+
+    return <RCTMyCustomView {...nativeProps} ref={ICON_REF} style={ {width: size, height: size, textAlignment: 'center' }} />;
     //return <RCTMyCustomView {...this.props} />;
   }
 }

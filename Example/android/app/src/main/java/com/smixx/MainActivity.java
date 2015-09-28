@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
-import com.smixx.BuildConfig;
 import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
@@ -14,7 +13,6 @@ import com.smixx.reactnativeicons.IconFont;
 import com.smixx.reactnativeicons.ReactNativeIcons;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
 
