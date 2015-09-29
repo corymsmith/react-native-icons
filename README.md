@@ -78,6 +78,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 }
 ```
 
+* Add the font files you want to use into `android/app/src/main/assets` from `node_modules/react-native-icons/fonts`
+
 ## Not supported on Android yet:
 - Tab Bar
 - Stacked Icons
