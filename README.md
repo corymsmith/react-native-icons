@@ -83,14 +83,27 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 - Stacked Icons
 - Spinner / loading indicator
 
-## Custom fonts
+### Custom fonts
 
-### iOS
+## iOS
 
 Custom fonts are not yet supported for iOS
 
-### Android
-1. Create a json file that maps css / icon name to the HTML encoded unicode character, examples in /fonts directory
+## Android
+### 1. Copy the font file to your apps assets directory
+### 2. Create a myfontname.json mapping file for the font, this is used to look up the mapping file and is used 
+ Create json file (newiconfont.json) that contains a map of css names to HTML encoded unicode characters., examples in /fonts directory
+ ```js
+ {
+   "alert": "&#xf101",
+   "alert-circled": "&#xf100",
+   "android-add": "&#xf2c7",
+   "android-add-circle": "&#xf359",
+ ...
+ }
+ ```
+### 3. Include fonts
+
 2. Copy font file and .json file to your apps assets directory
 3.) In MainActivity.java, add the icon font, first parameter is the prefix you want to use (ex. typicons|globe), second is the filename of the font.
 
