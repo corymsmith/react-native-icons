@@ -10,7 +10,7 @@ Includes **5** different icon fonts and **2,444** icons.
 npm install react-native-icons@latest --save
 ```
 
-If you need to support React Native version < 0.12.0-rc then please use:
+If you need to support React Native version **< 0.12.0-rc** use:
  
  ```bash
  npm install react-native-icons@0.4.0 --save
@@ -77,6 +77,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
 }
 ```
+
+* Copy the font files and .json files for the fonts you want to use into `android/app/src/main/assets` from `node_modules/react-native-icons/fonts`
 
 ## Not supported on Android yet:
 - Tab Bar
