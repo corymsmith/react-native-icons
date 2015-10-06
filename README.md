@@ -15,6 +15,8 @@ If you need to support React Native version **< 0.12.0-rc** use:
  ```bash
  npm install react-native-icons@0.4.0 --save
  ```
+ 
+ Note that 0.4.0 does not support Android.
 
 ## Getting started - iOS
 
