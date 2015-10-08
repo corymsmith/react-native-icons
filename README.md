@@ -15,12 +15,14 @@ If you need to support React Native version **< 0.12.0-rc** use:
  ```bash
  npm install react-native-icons@0.4.0 --save
  ```
+ 
+ Note that 0.4.0 does not support Android.
 
 ## Getting started - iOS
 
 1. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-icons`➜ `ios` and add `ReactNativeIcons.xcodeproj` 
-3. Add `libReactNativeIcons.a` (from 'Products' under ReactNativeIcons.xcodeproj) to your project's `Build Phases` ➜ `Link Binary With Libraries` phase
+3. Add `libReactNativeIcons.a` (from 'Products' under ReactNativeIcons.xcodeproj) to [your project's](http://www.runscriptbuildphase.com/images/Xcode_6_01.png) `Build Phases` ➜ `Link Binary With Libraries` phase
 4. Add the font files you want to use into the `Copy Bundle Resources` build phase of your project (click the '+' and click 'Add Other...' then choose the font files from  `node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit`).
 5. Run your project (`Cmd+R`)
 
