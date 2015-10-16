@@ -47,7 +47,12 @@ var styles = StyleSheet.create({
 IconImage.propTypes = {
   name: React.PropTypes.string,
   color: React.PropTypes.string,
-  size: React.PropTypes.number
+  size: React.PropTypes.number,
+  scaleX: React.PropTypes.number,
+  scaleY: React.PropTypes.number,
+  translateX: React.PropTypes.number,
+  translateY: React.PropTypes.number,
+  rotation: React.PropTypes.number,
 };
 
 var RCTMyCustomView = requireNativeComponent('SMXIconImage', IconImage);

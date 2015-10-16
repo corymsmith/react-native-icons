@@ -22,7 +22,7 @@ public class IconManager extends SimpleViewManager<ReactTextView> {
     private static final Map<String, Typeface> sTypefaceCache = new HashMap<String, Typeface>();
     public static final String REACT_CLASS = "SMXIconImage";
     private static final String TAG = "IconManager";
-    private HashMap<String, IconFont> mAllIconFonts = new HashMap<>();
+    private HashMap<String, IconFont> mAllIconFonts = new HashMap<String, IconFont>();
 
     @Override
     public String getName() {
