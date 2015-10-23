@@ -51,6 +51,8 @@ dependencies {
 
 ```java
 import com.smixx.reactnativeicons.ReactNativeIcons;  // <--- import
+import java.util.Arrays; // <--- import this if you want to specify which fonts to load
+import com.smixx.reactnativeicons.IconFont; // <--- import this if you want to specify which fonts to load
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
   ......
