@@ -22,9 +22,9 @@ var SMXTabBarIOS = React.createClass({
 
   render: function () {
     var nativeProps = {
-      tintColor : processColor(this.props.tintColor),
-      barTintColor : processColor(this.props.barTintColor),
-      translucent : processColor(this.props.translucent)
+      tintColor : this.props.tintColor,
+      barTintColor : this.props.barTintColor,
+      translucent : this.props.translucent
     };
 
     return (
