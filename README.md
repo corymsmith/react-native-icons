@@ -306,6 +306,6 @@ var Example = React.createClass({
 - [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
-- [Material design icons](https://github.com/google/material-design-icons) Contains **744** social icons.
+- [Material design icons](http://zavoloklom.github.io/material-design-iconic-font/icons.html) Contains **777** icons. [View the Cheatsheet](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html)
 
 ![Screenshot](https://dl.dropboxusercontent.com/u/6721696/stacked-demo.png)
