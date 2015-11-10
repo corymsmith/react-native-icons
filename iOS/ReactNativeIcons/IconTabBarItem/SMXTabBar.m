@@ -50,7 +50,7 @@
 - (void)insertReactSubview:(UIView *)view atIndex:(NSInteger)atIndex
 {
   if (![view isKindOfClass:[SMXTabBarItem class]]) {
-    RCTLogError(@"subview should be of type IconTabBarItem");
+    //RCTLogError(@"subview should be of type IconTabBarItem");
     return;
   }
   [_tabViews insertObject:view atIndex:atIndex];
@@ -78,9 +78,9 @@
   // we can't hook up the VC hierarchy in 'init' because the subviews aren't
   // hooked up yet, so we do it on demand here whenever a transaction has finished
   [self reactAddControllerToClosestParent:_tabController];
-
+  
   if (_tabsChanged) {
-
+    
     NSMutableArray *viewControllers = [NSMutableArray array];
     for (SMXTabBarItem *tab in [self reactSubviews]) {
       UIViewController *controller = tab.reactViewController;
@@ -89,18 +89,34 @@
       }
       [viewControllers addObject:controller];
     }
-
+    
     _tabController.viewControllers = viewControllers;
     _tabsChanged = NO;
   }
-
-  [[self reactSubviews] enumerateObjectsUsingBlock:^(SMXTabBarItem *tab, NSUInteger index, BOOL *stop) {
-    UIViewController *controller = _tabController.viewControllers[index];
-    controller.tabBarItem = tab.barItem;
-    if (tab.selected) {
-      _tabController.selectedViewController = controller;
+  
+  [[self reactSubviews] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    
+    SMXTabBarItem *tab = [obj respondsToSelector:@selector(barItem)] ? (SMXTabBarItem*)obj : nil;
+    
+    if (tab){
+      UIViewController *controller = _tabController.viewControllers[idx];
+      controller.tabBarItem = tab.barItem;
+      if (tab.selected){
+        _tabController.selectedViewController = controller;
+      }
     }
+    
   }];
+  
+  /*
+   [[self reactSubviews] enumerateObjectsUsingBlock:^(SMXTabBarItem *tab, NSUInteger index, BOOL *stop) {
+   UIViewController *controller = _tabController.viewControllers[index];
+   controller.tabBarItem = tab.barItem;
+   if (tab.selected) {
+   _tabController.selectedViewController = controller;
+   }
+   }];*/
+  
 }
 
 #pragma mark - UITabBarControllerDelegate
@@ -108,18 +124,18 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
   NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
-  SMXTabBarItem *tab = [self reactSubviews][index];
+  SMXTabBarItem *tab = (SMXTabBarItem*)[self reactSubviews][index];
   [_eventDispatcher sendInputEventWithName:@"press" body:@{@"target": tab.reactTag}];
   return NO;
 }
 
 - (void)setBarTintColor:(UIColor *)barTintColor {
-    _tabController.tabBar.barTintColor = barTintColor;
+  _tabController.tabBar.barTintColor = barTintColor;
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
-    _tabController.tabBar.tintColor = tintColor;
-//    _tabController.tabBarItem.tintColor
+  _tabController.tabBar.tintColor = tintColor;
+  //    _tabController.tabBarItem.tintColor
 }
 
 - (void)setTranslucent:(BOOL)translucent {
