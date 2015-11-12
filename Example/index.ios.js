@@ -133,7 +133,7 @@ var Example = React.createClass({
         </View>
 
         <Text style={styles.header}>
-          {'Material Icons'}
+          {'Spinners'}
         </Text>
 
         <View style={styles.topContainer}>
@@ -164,6 +164,13 @@ var Example = React.createClass({
             color='#ffffff'
             style={[styles.twitterIcon, {backgroundColor: 'transparent'}]}/>
         </Icon>
+
+        <Icon
+          name='octicons|alert'
+          size={40}
+          color='black'
+          style={styles.alert}
+        />
 
         <Text style={styles.header}>
           {'Create social sign in buttons'}
@@ -239,6 +246,11 @@ var styles = StyleSheet.create({
     margin: 10
   },
   lightbulb: {
+    width: 70,
+    height: 70,
+    margin: 10
+  },
+  alert: {
     width: 70,
     height: 70,
     margin: 10
