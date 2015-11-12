@@ -8,5 +8,6 @@
 #import "FAKZocial.h"
 #import "FAKIonIcons.h"
 #import "FAKMaterial.h"
+#import "FAKOcticons.h"
 
 #endif
