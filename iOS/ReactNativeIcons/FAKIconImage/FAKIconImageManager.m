@@ -46,6 +46,8 @@ RCT_CUSTOM_VIEW_PROPERTY(icon, NSDictionary, FAKIconImage)
                 target = [FAKFoundationIcons class];
             } else if([fontPrefix isEqualToString:@"material"]) {
                 target = [FAKMaterial class];
+            } else if([fontPrefix isEqualToString:@"octicons"]) {
+                target = [FAKOcticons class];
             }
             
             SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@IconWithSize:",[self camelcase:iconIdentifier]]);

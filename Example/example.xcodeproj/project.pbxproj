@@ -20,6 +20,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		2F46E3BD1BF53F2E007EB20D /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F46E3BC1BF53F2E007EB20D /* octicons.ttf */; };
 		2F4DA3581ACE2DDC00CC8346 /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4DA3551ACE2DCD00CC8346 /* libReactNativeIcons.a */; };
 		2F615A2D1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A2C1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf */; };
 		2FF956361B707F51003A2F9E /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF956331B707CA0003A2F9E /* libRCTWebSocket.a */; };
@@ -120,6 +121,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOS/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		2F46E3BC1BF53F2E007EB20D /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = "node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit/octicons.ttf"; sourceTree = "<group>"; };
 		2F4DA34F1ACE2DCD00CC8346 /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
 		2F615A2C1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Material-Design-Iconic-Font.ttf"; path = "../../FontAwesomeKit_forked/FontAwesomeKit/Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
 		2FF956271B707CA0003A2F9E /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../Example/node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		13B07FAE1A68108700A75B9A /* example */ = {
 			isa = PBXGroup;
 			children = (
+				2F46E3BC1BF53F2E007EB20D /* octicons.ttf */,
 				2F615A2C1B698A5B004A7B1D /* Material-Design-Iconic-Font.ttf */,
 				CE90A3421B50803400CB0E5D /* FontAwesome.otf */,
 				CE90A3431B50803400CB0E5D /* foundation-icons.ttf */,
@@ -455,6 +458,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F46E3BD1BF53F2E007EB20D /* octicons.ttf in Resources */,
 				CE90A3481B50803400CB0E5D /* ionicons.ttf in Resources */,
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
