@@ -30,7 +30,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setJSMainModuleName("index.android")
                 .addPackage(new MainReactPackage())
                 .addPackage(new ReactNativeIcons(Arrays.asList(
-                        new IconFont("typicons", "typicons.ttf")
+                        new IconFont("typicons", "typicons.ttf"),
+                        new IconFont("octicons", "octicons.ttf")
                 )))
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)

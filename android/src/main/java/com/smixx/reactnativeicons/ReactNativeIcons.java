@@ -27,7 +27,7 @@ public class ReactNativeIcons implements ReactPackage {
     }
 
     private void addIncludedFonts() {
-        mAllIconFonts = new ArrayList<IconFont>(Arrays.<IconFont>asList(
+        mAllIconFonts = new ArrayList<>(Arrays.<IconFont>asList(
                 new IconFont("fontawesome", "FontAwesome.otf"),
                 new IconFont("ion", "ionicons.ttf"),
                 new IconFont("zocial", "zocial.ttf"),
@@ -39,7 +39,7 @@ public class ReactNativeIcons implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
-        return new ArrayList<NativeModule>();
+        return new ArrayList<>();
     }
 
     @Override

@@ -65,6 +65,14 @@ var example = React.createClass({
             />
         </View>
 
+
+        <Icon
+          name='octicons|alert'
+          size={40}
+          color='black'
+          style={styles.alert}
+        />
+
         <Text style={styles.header}>
           {'Create social sign in buttons'}
         </Text>
@@ -157,6 +165,12 @@ var styles = StyleSheet.create({
     width: 50,
     height: 50,
     margin: 5
+  },
+
+  alert: {
+    width: 70,
+    height: 70,
+    margin: 10
   },
   twitterOutline: {
     flexDirection: 'column',
