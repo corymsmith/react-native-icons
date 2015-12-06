@@ -73,6 +73,15 @@ render: function() {
   var selectedIconName = this.props.selectedIconName || this.props.iconName;
   var selectedIconSize = this.props.selectedIconSize || this.props.iconSize;
 
+
+  if(iconName.indexOf('|') == -1) {
+    throw Error('iconName "' + name + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
+  }
+
+  if(selectedIconName.indexOf('|') == -1) {
+    throw Error('selectedIconName "' + name + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
+  }
+
   var icon = {name : iconName, size: iconSize};
   var selectedIcon = {name: selectedIconName, size: selectedIconSize};
 

@@ -27,6 +27,10 @@ class IconImage extends React.Component {
     var size = this.props.size;
     shimAssert.basic( size, 'size must be initialized');
 
+    if(name.indexOf('|') == -1) {
+      throw Error('icon name "' + name + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
+    }
+
     var color = this.props.color;
 
     var nativeProps = Object.assign({},this.props);
