@@ -43,6 +43,7 @@ var Example = React.createClass({
         <TabBarItemIOS
           name="home"
           iconName={'ion|ios-home-outline'}
+          selectedIconName={'ion|ios-home'}
           title={''}
           badgeValue={'3'}
           iconSize={32}
