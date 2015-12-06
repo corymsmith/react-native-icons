@@ -27,8 +27,7 @@ var example = React.createClass({
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.topContainer}>
           <TouchableHighlight
-            underlayColor="transparent"
-            onPress={() => alert('Beer!')}>
+            underlayColor="transparent">
             <Icon
               name='ion|beer'
               size={40}
