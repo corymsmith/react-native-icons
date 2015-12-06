@@ -13,6 +13,7 @@ import com.smixx.reactnativeicons.IconFont;
 import com.smixx.reactnativeicons.ReactNativeIcons;
 
 import java.util.Arrays;
+import com.facebook.soloader.SoLoader;
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
 
@@ -52,8 +53,17 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
     }
 
     @Override
+    public void onBackPressed() {
+        if (mReactInstanceManager != null) {
+            mReactInstanceManager.onBackPressed();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
     public void invokeDefaultOnBackPressed() {
-      super.onBackPressed();
+        super.onBackPressed();
     }
 
     @Override
