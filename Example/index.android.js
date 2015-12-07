@@ -14,7 +14,7 @@ var {
   TouchableHighlight
   } = React;
 
-var { Icon } = require('react-native-icons');
+var { Icon, Spinner } = require('react-native-icons');
 
 var BrandColors = {
   Facebook: '#3b5998',
@@ -62,6 +62,24 @@ var example = React.createClass({
             color='gray'
             style={styles.lightbulb}
             />
+        </View>
+
+        <Text style={styles.header}>
+          {'Spinners'}
+        </Text>
+
+        <View style={styles.topContainer}>
+
+          <Spinner name='fontawesome|spinner' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-a' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-b' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-c' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
+          <Spinner name='ion|load-d' size={24} style={{width: 24, height: 24, backgroundColor: 'transparent'}}
+                   color='#777'/>
         </View>
 
 

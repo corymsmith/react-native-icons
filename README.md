@@ -87,7 +87,6 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 ## Not supported on Android yet:
 - Tab Bar
 - Stacked Icons
-- Spinner / loading indicator
 
 ### Custom fonts
 
