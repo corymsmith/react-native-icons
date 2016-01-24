@@ -1,6 +1,6 @@
 #### WARNING: Support for this library is being discontinued, I highly recommend using https://github.com/oblador/react-native-vector-icons instead as its more fully featured.
 
-There's far biggger problems to solve in the open source and React Native communities than competing icon libraries so I'll be focusing on pushing forward other initiatives.
+There's far bigger problems to solve in the open source and React Native communities than competing icon libraries so I'll be focusing on pushing forward other initiatives.
 
 ## React Native Icons
 
