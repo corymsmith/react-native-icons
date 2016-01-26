@@ -75,11 +75,11 @@ render: function() {
 
 
   if(iconName.indexOf('|') == -1) {
-    throw Error('iconName "' + name + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
+    throw Error('iconName "' + iconName + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
   }
 
   if(selectedIconName.indexOf('|') == -1) {
-    throw Error('selectedIconName "' + name + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
+    throw Error('selectedIconName "' + selectedIconName + '" doesn\'t specify a font name prefix. ex. "ion|beer"');
   }
 
   var icon = {name : iconName, size: iconSize};
